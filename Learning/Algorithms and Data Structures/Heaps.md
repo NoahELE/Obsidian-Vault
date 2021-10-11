@@ -6,7 +6,7 @@ Implementations:
 
 - Dynamic Array
   - delete min/max - $\Theta(n)$
-  - enqueue - $O(n)$ *(might require a realloc)*
+  - enqueue - $O(n)$ _(might require a realloc)_
 - Linked List
   - delete min/max - $\Theta(n)$
   - enqueue - $O(1)$
@@ -29,5 +29,5 @@ Bottom-up Heap Construction - $\Theta(n)$
 2. delete max element (downheap) - $O(logn)$
 3. n deletions
 
-Total time complexity $O(nlogn)$
+Total time complexity: $O(nlogn)$
 

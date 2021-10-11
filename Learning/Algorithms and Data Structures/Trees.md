@@ -51,3 +51,7 @@ Search:
 
 - ~~$O(n)$ - worst case~~
 - $O(logn)$ - balanced case
+
+## 2-3-4 Tree
+
+2, 3, or 4 pointers for each node
