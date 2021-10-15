@@ -126,7 +126,7 @@ find a path between two vertices and it's _guaranteed_ to do so.
 
 may not be the shortest path
 
-work on graphs that are:
+works on graphs that are:
 
 - connected
 - unweighted
@@ -136,6 +136,7 @@ The steps of this algorithm are:
 
 1. Push the source vertex into the stack
 2. While the stack is not empty:
+
     1. Pop a vertex from the stack
     2. If said vertex is:
         1. the destination: stop
@@ -143,6 +144,7 @@ The steps of this algorithm are:
         3. unvisited:
             1. Mark it as visited
             2. Push its unvisited neighbours into the stack
+
 
 ### Breadth-First Search
 
@@ -166,6 +168,7 @@ The steps of this algorithm are:
         2. otherwise:
             1. Mark its unvisited neighbours as visited
             2. Enqueue said neighbours into the queue
+
 
 ### Uniform Cost Search
 
@@ -197,3 +200,10 @@ for i
         for k
             ...
 ```
+
+data structures used: 2 matrices
+
+- 1 for shortest distance and
+- 1 for previous vertex
+
+time complexity:

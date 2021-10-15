@@ -17,19 +17,19 @@ NoSQL: Schema on Read
 
 ## Types
 
-## Key-Value Stores
+### Key-Value Stores
 
 Key = primary key, Value = anything
 
 Example: Redis
 
-## Document Stores
+### Document Stores
 
 document is json file
 
 Example: MongoDB
 
-## Columns Families
+### Columns Families
 
 columns rather than rows stored on disk
 
@@ -37,7 +37,7 @@ related columns grouped together as families
 
 Example: Cassandra
 
-## Graph Databases
+### Graph Databases
 
 a node-and-arc network
 
@@ -45,3 +45,8 @@ graphs are difficult to program in relational database
 
 Example: Neo4j
 
+## ACID vs BASE
+
+ACID: Atomic, Consistent, Isolated, Durable
+
+BASE: Basically Available, Soft state, Eventual consistency

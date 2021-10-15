@@ -87,3 +87,4 @@ Different form of association, indicating one class cannot exist without the oth
 ## Dependency
 
 Dependency represents a weak relationship between classes; dependency implies that a change to one class may impact the other class. It is represented by a dotted arrow.
+
