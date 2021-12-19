@@ -13,7 +13,7 @@ Both the left and right subtrees must also be binary search trees.
 Insert:
 
 - $O(n)$ - worst case
-- $O(logn)$ - balanced case
+- $\Theta(logn)$ - balanced case
 
 Search:
 
@@ -23,14 +23,14 @@ Search:
 ### Traversal
 
 - pre-order
-  - parent, left, right
-  - good for copying trees
+    - parent, left, right
+    - good for copying trees
 - in-order
-  - left, parent, right
-  - good for sorting
+    - left, parent, right
+    - good for sorting
 - post-order
-  - left, right, parent
-  - good for freeing
+    - left, right, parent
+    - good for freeing
 
 ### Complete BST
 
@@ -40,7 +40,11 @@ Now given a sequence of distinct non-negative integer keys, a unique BST can be 
 
 ## AVL Tree
 
-always balanced
+The AVL tree is a _self-balancing_ binary search tree.
+
+A counter at each node is used to keep the tree balanced.
+
+$counter_{node} = depth_{left} - depth_{right}$
 
 Insert:
 
@@ -54,4 +58,23 @@ Search:
 
 ## 2-3-4 Tree
 
-2, 3, or 4 pointers for each node
+Binary trees have 2 pointers for each node.
+
+2-3-4 trees have 2, 3, or 4 pointers for each node.
+
+- insertion: always done on the bottom nodes
+- nodes: broken up on the way down
+
+time complexities:
+
+- insertion: $\Theta(log_2n)$
+- lookup: $O(log_2n)$
+
+## B+ Trees
+
+B+ trees are extensions of 2-3-4 trees.
+
+- more keys per node: instead of 1…3 keys/node, have 1…512 keys/node
+- same complexity class: different logarithm bases
+
+They are commonly used within databases.

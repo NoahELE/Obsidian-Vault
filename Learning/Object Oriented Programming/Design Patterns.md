@@ -76,3 +76,20 @@ ConcreteObserverA --|> Observer
 ConcreteObserverB --|> Observer
 ```
 
+## Classification
+
+Creational:
+
+- Singleton
+- Factory Method
+
+Structural:
+
+- Adapter
+- Bridge
+
+Behavioural:
+
+- Strategy
+- Template Method
+- Observer

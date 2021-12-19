@@ -1,15 +1,15 @@
 # Heaps
 
-## Queues
+## Priority Queues
 
 Implementations:
 
 - Dynamic Array
-  - delete min/max - $\Theta(n)$
-  - enqueue - $O(n)$ _(might require a realloc)_
+    - delete min/max - $\Theta(n)$
+    - enqueue - $O(n)$ _(might require a realloc)_
 - Linked List
-  - delete min/max - $\Theta(n)$
-  - enqueue - $O(1)$
+    - delete min/max - $\Theta(n)$
+    - enqueue - $O(1)$
 
 ## Heaps
 
@@ -21,7 +21,7 @@ UpHeap - $O(logn)$
 
 - used in insertion of an element
 
-Bottom-up Heap Construction - $\Theta(n)$
+Bottom-up Heap Construction (also known as heapify, fixheap, makeheap etc.) - $\Theta(n)$
 
 ## Heap Sort
 
@@ -29,5 +29,6 @@ Bottom-up Heap Construction - $\Theta(n)$
 2. delete max element (downheap) - $O(logn)$
 3. n deletions
 
-Total time complexity: $O(nlogn)$
+stability: **unstable**
 
+Total time complexity: $O(nlogn)$

@@ -60,4 +60,3 @@ Denormalization:
 - The pay-off: query speed.
 - The price: extra work on updates to keep redundant data consistent.
 - Denormalization may be used to improve performance of time-critical operations.
-

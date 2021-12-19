@@ -19,9 +19,13 @@ MST must have exactly V‐ 1 edges
 
 No cycles in MST
 
-## Prism Algorithm
+## Prim's Algorithm
 
-Preferred method for dense graphs
+vertex based approach
+
+Almost the same as Dijkstra, but the weight does not accumulate.
+
+Preferred method for **dense** graphs
 
 Easiest with matrix representation
 
@@ -33,7 +37,7 @@ Prim’s algorithm relies on picking the next best edge that joins two set of ve
 Pseudo Code:
 
 ```C
-void prim(G,w,root) {
+void prim(G, w, root) {
     for every u in V {
         dist[u] = ∞;
         inmst[u] = FALSE;
@@ -44,10 +48,10 @@ void prim(G,w,root) {
     while (!empty PQ) {
         u = deletemin(PQ);
         for every (v adjacent to u) {
-            if ((inmst[v]==FALSE)&& (w[u][ v]< dist[v])) {
-                dist[v] = w[u][ v]; /* update distance */
-                decreasewt(PQ,v,dist[v]);/* update PQ dist*/
-                pred[v]= u; /* update path information */
+            if ((inmst[v] == FALSE)&& (w[u][v] < dist[v])) {
+                dist[v] = w[u][v]; /* update distance */
+                decreasewt(PQ, v, dist[v]);/* update PQ dist*/
+                pred[v] = u; /* update path information */
             }
         }
         inmst[u] = TRUE;
@@ -55,9 +59,11 @@ void prim(G,w,root) {
 } /* at end: MST = {{v,pred[v]}: v in V – {root}} */
 ```
 
-time complexity: $O((V + E)logV) = O(ElogV)\ (for\ dense\ graph\ with\ heap\ PQ)$
+time complexity: $O((V + E)logV) = O(ElogV)$ (for dense graph with heap PQ)
 
 ## Kruskal Algorithm
+
+edge based approach
 
 Prim’s algorithm adds the next closest vertex.
 
@@ -78,3 +84,5 @@ while |E1| < |V|-1 edges and E2 not EMPTYSET
         E1 = E1 Union e(i,j)
         unite MSTs with V(i) and V(j)
 ```
+
+time complexity: $O(ElogE + E + V) = O(ElogE)$

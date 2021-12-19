@@ -1,0 +1,12 @@
+{
+  "spellcheck": true,
+  "showLineNumber": true,
+  "useTab": false,
+  "vimMode": true,
+  "trashOption": "local",
+  "promptDelete": false,
+  "strictLineBreaks": true,
+  "tabSize": 4,
+  "spellcheckDictionary": [],
+  "fileSortOrder": "byCreatedTime"
+}

@@ -1,0 +1,10 @@
+{
+  "baseFontSize": 16,
+  "cssTheme": "Things",
+  "theme": "obsidian",
+  "translucency": false,
+  "baseFontSizeAction": false,
+  "enabledCssSnippets": [
+    "font"
+  ]
+}

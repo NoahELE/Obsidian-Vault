@@ -136,15 +136,13 @@ The steps of this algorithm are:
 
 1. Push the source vertex into the stack
 2. While the stack is not empty:
-
     1. Pop a vertex from the stack
     2. If said vertex is:
         1. the destination: stop
         2. visited: continue
         3. unvisited:
             1. Mark it as visited
-            2. Push its unvisited neighbours into the stack
-
+            2. Push its unvisited neighbors into the stack
 
 ### Breadth-First Search
 
@@ -166,9 +164,8 @@ The steps of this algorithm are:
     2. If said vertex is:
         1. the destination: stop
         2. otherwise:
-            1. Mark its unvisited neighbours as visited
+            1. Mark its unvisited neighbors as visited
             2. Enqueue said neighbours into the queue
-
 
 ### Uniform Cost Search
 
@@ -190,15 +187,45 @@ data structures used are:
 - priority queue of vertices
 - list of shortest distance and preceding vertices in shortest path
 
-time complexity: $O((V + E)logV)$
+time complexity: $O((V + E)logV)$ (using heap as priority queue)
+
+- deletemin - $O(logV)$
+- update - $O(logV)$
+- deletemin - $O(V)$ times
+- update - $O(E)$ times
+
+time complexity: $O(E + VlogV)$ (using a Fibonacci heap)
+
+- deletemin - $O(logV)$
+- update - $O(1)$
+- deletemin - $O(V)$ times
+- update - $O(E)$ times
 
 ### Floyd-Warshall Algorithm
 
+All pairs shortest path algorithm
+
+If the graph is sparse, we can say $E = V$, in this case, running Dijkstra for all vertices is a good choice.
+
+If the graph is dense, we can say $E = V^2$, in this case, Floyd-Warshall is better.
+
+weighted directed graphs (weight can be negative)
+
 ```C
-for i
-    for j
-        for k
-            ...
+/*
+A[i][i] = 0, no path = INT_MAX
+i for intermediate
+s for source
+t for traget
+*/
+for (i = 0; i < V; i++) {
+    for (s = 0; s < V; s++) {
+        for (t = 0; t < V; t++) {
+            if (A[s][i] + A[i][t] < A[s][t])
+                A[s][t] = A[s][i] + A[i][t];
+        }
+    }
+}
 ```
 
 data structures used: 2 matrices
@@ -206,4 +233,7 @@ data structures used: 2 matrices
 - 1 for shortest distance and
 - 1 for previous vertex
 
-time complexity:
+time complexity: $\Theta(V^3)$
+
+- for dense graph $\Theta(E^{3/2})$
+- for sparse graph $\Theta(E^3)$

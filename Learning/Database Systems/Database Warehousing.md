@@ -17,14 +17,14 @@ numerical aggregation and dimensions
 ## Characteristics
 
 - subject oriented
-  - organised around certain subjects
+    - organised around certain subjects
 - validated and integrated data
-  - validated and convert to certain format before storing
+    - validated and convert to certain format before storing
 - time variant
-  - historical data
-  - snapshot regularly
+    - historical data
+    - snapshot regularly
 - non-volatile _(read only)_
-  - all updated done automatically and periodically
+    - all updated done automatically and periodically
 
 ## Dimensional Modeling
 

@@ -14,6 +14,7 @@ NoSQL: Schema on Read
 - support schema on read
 - no ACID compliant
 - eventually consistent
+- available all the time (suitable for company like Facebook, Twitter)
 
 ## Types
 

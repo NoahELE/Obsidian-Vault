@@ -1,0 +1,9 @@
+{
+  "spellcheck": true,
+  "showLineNumber": true,
+  "useTab": true,
+  "vimMode": true,
+  "trashOption": "local",
+  "promptDelete": false,
+  "strictLineBreaks": true
+}

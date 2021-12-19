@@ -51,7 +51,7 @@ Data partitioning is the process of partitioning data into subsets that are ship
 - Reduced network traffic at prime time
 - This is currently popular as a way of achieving high availability for global systems
 
-#### disadvantages
+#### Disadvantages
 
 - Need more storage space
 - Data Integrity
@@ -61,12 +61,9 @@ Data partitioning is the process of partitioning data into subsets that are ship
 ### Partitioning
 
 - Horizontal partitioning
-
     - Table rows distributed across nodes (sides)
 - Vertical partitioning
-
     - Table columns distributed across nodes (sides)
-
 
 ## Trade-offs
 
@@ -79,7 +76,6 @@ Data partitioning is the process of partitioning data into subsets that are ship
 - If any copy of a data item is updated anywhere on the network, the same update is immediately applied to all other copies or it is aborted
 - Ensures data integrity and minimizes the complexity of knowing where the most recent copy of data is located
 - Can result in slow response time and high network usage
-
 
 ### Asynchronous updates
 

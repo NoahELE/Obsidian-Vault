@@ -1,0 +1,150 @@
+{
+  "main": {
+    "id": "f61d90e44909d2e0",
+    "type": "split",
+    "children": [
+      {
+        "id": "cf4ef1d040f996ad",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Algorithms and Data Structures/Stack.md",
+            "mode": "source"
+          }
+        },
+        "group": "f61565cf0dde6c39"
+      },
+      {
+        "id": "39bae27313f2b74b",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Algorithms and Data Structures/Stack.md",
+            "mode": "preview"
+          }
+        },
+        "group": "f61565cf0dde6c39"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f3cd87795248cfc8",
+    "type": "split",
+    "children": [
+      {
+        "id": "f932ba3efad80dca",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30aaf898ace7c8ee",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "ed689f4e1cf6c8ab",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "async",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d6d097e1c5250812",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6aa9438e84f367f1",
+    "type": "split",
+    "children": [
+      {
+        "id": "e1b5b0d834a86936",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b3f3df539203b3cc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Algorithms and Data Structures/Stack.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "fabd95ec43d50425",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Algorithms and Data Structures/Stack.md"
+              }
+            }
+          },
+          {
+            "id": "91434472596a116a",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "70a676d3428b0bbc",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "cf4ef1d040f996ad",
+  "lastOpenFiles": [
+    "Algorithms and Data Structures/Stack.md",
+    "Object Oriented Programming/30分钟学会UML类图.md",
+    "Algorithms and Data Structures/Heaps.md",
+    "Object Oriented Programming/Design Patterns.md",
+    "Object Oriented Programming/Design Patterns for Humans.md",
+    "Database Systems/Relational Algebra.md",
+    "Database Systems/Transactoins.md",
+    "Database Systems/Database Administration.md",
+    "Database Systems/Normalization.md",
+    "Database Systems/Database Warehousing.md"
+  ]
+}
