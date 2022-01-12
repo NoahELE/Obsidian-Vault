@@ -10,7 +10,8 @@
           "type": "markdown",
           "state": {
             "file": "Algorithms and Data Structures/Stack.md",
-            "mode": "source"
+            "mode": "source",
+            "source": false
           }
         },
         "group": "f61565cf0dde6c39"
@@ -22,7 +23,8 @@
           "type": "markdown",
           "state": {
             "file": "Algorithms and Data Structures/Stack.md",
-            "mode": "preview"
+            "mode": "preview",
+            "source": false
           }
         },
         "group": "f61565cf0dde6c39"

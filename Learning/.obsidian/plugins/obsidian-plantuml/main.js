@@ -4605,7 +4605,7 @@ var PlantUMLSettingsTab = class extends import_obsidian.PluginSettingTab {
       this.plugin.settings.server_url = value;
       yield this.plugin.saveSettings();
     })));
-    if (this.plugin.app.plugins.plugins["local-plantuml"]) {
+    if (import_obsidian.Platform.isDesktopApp) {
       new import_obsidian.Setting(containerEl).setName("Local JAR").setDesc("Path to local PlantUML Jar").addText((text) => text.setPlaceholder(DEFAULT_SETTINGS.localJar).setValue(this.plugin.settings.localJar).onChange((value) => __async(this, null, function* () {
         this.plugin.settings.localJar = value;
         yield this.plugin.saveSettings();
@@ -4670,9 +4670,8 @@ var Processors = class {
         const img2 = document.createElement("img");
         img2.src = "data:image/png;base64," + local;
         img2.useMap = "#" + encodedDiagram;
-        const map = yield this.plugin.app.plugins.plugins["local-plantuml"].generateMap(source, this.plugin.settings.localJar);
+        const map = yield this.plugin.local.generateLocalMap(source);
         if (map.contains("map")) {
-          console.log("map");
           el.innerHTML = map;
           el.children[0].setAttr("name", encodedDiagram);
         }
@@ -4731,14 +4730,8 @@ var Processors = class {
   }
   localProcessor(source, type) {
     return __async(this, null, function* () {
-      if (this.plugin.app.plugins.plugins["local-plantuml"]) {
-        try {
-          return yield this.plugin.app.plugins.plugins["local-plantuml"].generateImage(source, this.plugin.settings.localJar, type);
-        } catch (e) {
-          new import_obsidian2.Notice("An error orrcurred while rendering your PlantUML Diagram, please check the console for more information");
-          console.error(e);
-          return "error";
-        }
+      if (this.plugin.local && this.plugin.settings.localJar) {
+        return this.plugin.local.generateLocalImage(source, type);
       }
       return "";
     });
@@ -4813,6 +4806,116 @@ function v4(options, buf, offset) {
 }
 var v4_default = v4;
 
+// src/localProcessors.ts
+var LocalProcessors = class {
+  constructor(plugin) {
+    this.plugin = plugin;
+  }
+  generateLocalMap(source) {
+    return __async(this, null, function* () {
+      const resolve = require("path").resolve;
+      const { exec } = require("child_process");
+      const jar = resolve(__dirname, this.plugin.settings.localJar);
+      const args = [
+        "-jar",
+        "-Djava.awt.headless=true",
+        jar,
+        "-charset utf-8",
+        "-pipemap"
+      ];
+      const child = exec("java " + args.join(" "), { encoding: "binary" });
+      let stdout = "";
+      if (child.stdout) {
+        child.stdout.on("data", (data) => {
+          stdout += data;
+        });
+      }
+      return new Promise((resolve2, reject) => {
+        child.on("error", reject);
+        child.on("close", (code) => {
+          if (code === 0) {
+            resolve2(stdout);
+            return;
+          } else if (code === 1) {
+            console.log(stdout);
+            reject(new Error(`an error occurred`));
+          } else {
+            reject(new Error(`child exited with code ${code}`));
+          }
+        });
+        child.stdin.write(source);
+        child.stdin.end();
+      });
+    });
+  }
+  generateLocalImage(source, type) {
+    return __async(this, null, function* () {
+      const resolve = require("path").resolve;
+      const { ChildProcess, exec } = require("child_process");
+      const jar = resolve(__dirname, this.plugin.settings.localJar);
+      const args = [
+        "-jar",
+        "-Djava.awt.headless=true",
+        jar,
+        "-t" + type,
+        "-charset utf-8",
+        "-pipe"
+      ];
+      let child;
+      if (type === "png") {
+        child = exec("java " + args.join(" "), { encoding: "binary" });
+      } else {
+        child = exec("java " + args.join(" "), { encoding: "utf-8" });
+      }
+      let stdout;
+      let stderr;
+      if (child.stdout) {
+        child.stdout.on("data", (data) => {
+          if (stdout === void 0) {
+            stdout = data;
+          } else
+            stdout += data;
+        });
+      }
+      if (child.stderr) {
+        child.stderr.on("data", (data) => {
+          if (stderr === void 0) {
+            stderr = data;
+          } else
+            stderr += data;
+        });
+      }
+      return new Promise((resolve2, reject) => {
+        child.on("error", reject);
+        child.on("close", (code) => {
+          if (code === 0) {
+            if (type === "png") {
+              const buf = new Buffer(stdout, "binary");
+              resolve2(buf.toString("base64"));
+              return;
+            }
+            resolve2(stdout);
+            return;
+          } else if (code === 1) {
+            console.log(stdout);
+            reject(new Error(stderr));
+          } else {
+            if (type === "png") {
+              const buf = new Buffer(stdout, "binary");
+              resolve2(buf.toString("base64"));
+              return;
+            }
+            resolve2(stdout);
+            return;
+          }
+        });
+        child.stdin.write(source, "utf-8");
+        child.stdin.end();
+      });
+    });
+  }
+};
+
 // src/main.ts
 var SECONDS_TO_MS_FACTOR = 1e3;
 var PlantumlPlugin = class extends import_obsidian3.Plugin {
@@ -4826,9 +4929,12 @@ var PlantumlPlugin = class extends import_obsidian3.Plugin {
       yield this.loadSettings();
       this.addSettingTab(new PlantUMLSettingsTab(this));
       const processors = new Processors(this);
+      if (import_obsidian3.Platform.isDesktopApp) {
+        this.local = new LocalProcessors(this);
+      }
       let debounceTime = this.settings.debounce;
       debounceTime = debounceTime * SECONDS_TO_MS_FACTOR;
-      const imageProcessorDebounce = (source, el, ctx) => {
+      const imageProcessorDebounce = (source, el, ctx) => __async(this, null, function* () {
         if (el.dataset.plantumlDebounce) {
           const debounceId = el.dataset.plantumlDebounce;
           if (this.debounceMap.has(debounceId)) {
@@ -4839,10 +4945,10 @@ var PlantumlPlugin = class extends import_obsidian3.Plugin {
           const uuid = v4_default();
           el.dataset.plantumlDebouce = uuid;
           this.debounceMap.set(uuid, func);
-          func(source, el, ctx);
+          yield processors.imageProcessor(source, el, ctx);
         }
-      };
-      const asciiProcessorDebounce = (source, el, ctx) => {
+      });
+      const asciiProcessorDebounce = (source, el, ctx) => __async(this, null, function* () {
         if (el.dataset.plantumlDebounce) {
           const debounceId = el.dataset.plantumlDebounce;
           if (this.debounceMap.has(debounceId)) {
@@ -4853,10 +4959,10 @@ var PlantumlPlugin = class extends import_obsidian3.Plugin {
           const uuid = v4_default();
           el.dataset.plantumlDebouce = uuid;
           this.debounceMap.set(uuid, func);
-          func(source, el, ctx);
+          yield processors.asciiProcessor(source, el, ctx);
         }
-      };
-      const svgProcessorDebounce = (source, el, ctx) => {
+      });
+      const svgProcessorDebounce = (source, el, ctx) => __async(this, null, function* () {
         if (el.dataset.plantumlDebounce) {
           const debounceId = el.dataset.plantumlDebounce;
           if (this.debounceMap.has(debounceId)) {
@@ -4867,9 +4973,9 @@ var PlantumlPlugin = class extends import_obsidian3.Plugin {
           const uuid = v4_default();
           el.dataset.plantumlDebouce = uuid;
           this.debounceMap.set(uuid, func);
-          func(source, el, ctx);
+          yield processors.svgProcessor(source, el, ctx);
         }
-      };
+      });
       this.registerMarkdownCodeBlockProcessor("plantuml", imageProcessorDebounce);
       this.registerMarkdownCodeBlockProcessor("plantuml-ascii", asciiProcessorDebounce);
       this.registerMarkdownCodeBlockProcessor("plantuml-svg", svgProcessorDebounce);
@@ -4877,7 +4983,9 @@ var PlantumlPlugin = class extends import_obsidian3.Plugin {
     });
   }
   onunload() {
-    console.log("unloading plugin plantuml");
+    return __async(this, null, function* () {
+      console.log("unloading plugin plantuml");
+    });
   }
   loadSettings() {
     return __async(this, null, function* () {

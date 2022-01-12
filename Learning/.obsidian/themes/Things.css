@@ -1,13 +1,44 @@
 /*───────────────────────────────────────────────────────
 THINGS
-Version 1.3.3
+Version 1.6.3
+Created by @colineckert
+
+Readme:
 https://github.com/colineckert/obsidian-things
-Created by @colineckert (GitHub)
+
+Support my work:
+https://www.buymeacoffee.com/colineckert
+
+----------------------------------------------------------------
+
 MIT License
-─────────────────────────────────────────────────────────
+
+Copyright (c) 2020-2021 Stephan Ango (@kepano)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+----------------------------------------------------------------
+
 For help and/or CSS snippets, thanks to:
 - @kepano
 - @chetachiezikeuzor
+
 ────────────────────────────────────────────────────── */
 
 :root {
@@ -221,7 +252,14 @@ body {
     var(--base-l),
     0
   );
-  --background-translucent: rgba(255, 255, 255, 0.85);
+  /* --background-translucent: rgba(255, 255, 255, 0.85); */
+  --background-translucent: hsla(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-l) + 0%),
+    0.8
+  );
+  --opacity-translucency: 1;
 
   --icon-color: var(--text-muted);
   --icon-hex: 000;
@@ -258,6 +296,11 @@ body {
     0.7
   );
   --shadow-color: rgba(0, 0, 0, 0.1);
+
+  /* --tag-background-color: rgb(189, 225, 211); */
+  --tag-background-color-l: #bde1d3;
+  /* --tag-font-color: rgb(29, 105, 75); */
+  --tag-font-color-l: #1d694b;
 
   --code-color: #383a42;
   --atom-gray-1: #383a42;
@@ -336,8 +379,10 @@ body {
     var(--base-h),
     var(--base-s),
     var(--base-d),
-    0.85
+    0.8
   );
+  --opacity-translucency: 1;
+
   --background-match-highlight: hsla(var(--accent-h), 40%, 62%, 0.2);
   --background-modifier-accent: hsl(
     var(--accent-h),
@@ -371,6 +416,9 @@ body {
     0.8
   );
   --shadow-color: rgba(0, 0, 0, 0.3);
+
+  --tag-background-color-d: rgb(29, 105, 75);
+  --tag-font-color-d: var(--text-normal);
 
   --code-color: #c9d1d9;
   --atom-gray-1: #5c6370;
@@ -619,9 +667,11 @@ span.cm-formatting-highlight {
 
 .theme-light .frontmatter-container .tag,
 .theme-light a.tag {
-  background-color: rgb(189, 225, 211);
-  color: rgb(29, 105, 75);
-  font-size: var(--font-adaptive-small);
+  /* background-color: rgb(189, 225, 211); */
+  background-color: var(--tag-background-color-l);
+  color: var(--tag-font-color-l);
+  /* color: rgb(29, 105, 75); */
+  font-size: var(--font-adaptive-smaller);
   font-weight: 500;
   font-family: var(--font-ui);
   padding: 2px 8px;
@@ -637,8 +687,10 @@ span.cm-formatting-highlight {
 }
 .theme-dark .frontmatter-container .tag,
 .theme-dark a.tag {
-  background-color: rgb(29, 105, 75);
-  color: var(--text-normal);
+  /* background-color: rgb(29, 105, 75); */
+  background-color: var(--tag-background-color-d);
+  color: var(--tag-font-color-d);
+  /* color: var(--text-normal); */
   font-size: var(--font-adaptive-smaller);
   font-weight: 500;
   font-family: var(--font-ui);
@@ -654,8 +706,10 @@ span.cm-formatting-highlight {
   border-color: var(--background-modifier-border-hover);
 }
 .theme-light .cm-s-obsidian span.cm-hashtag {
-  background-color: rgb(189, 225, 211);
-  color: rgb(29, 105, 75);
+  background-color: var(--tag-background-color-l);
+  color: var(--tag-font-color-l);
+  /* background-color: rgb(189, 225, 211);
+  color: rgb(29, 105, 75); */
   font-size: var(--font-adaptive-small);
   font-family: var(--font-ui);
   font-weight: 500;
@@ -671,8 +725,10 @@ span.cm-formatting-highlight {
   cursor: text;
 }
 .theme-dark .cm-s-obsidian span.cm-hashtag {
-  background-color: rgb(29, 105, 75);
-  color: var(--text-normal);
+  background-color: var(--tag-background-color-d);
+  color: var(--tag-font-color-d);
+  /* background-color: rgb(29, 105, 75);
+  color: var(--text-normal); */
   font-size: var(--font-adaptive-small);
   font-family: var(--font-ui);
   font-weight: 500;
@@ -1279,14 +1335,6 @@ body.hider-frameless .titlebar {
 }
 
 /* --------------- */
-/* Translucent window enabled */
-/* --------------- */
-
-/* .is-translucent .workspace {
-  background-color: var(--background-translucent) !important;
-} */
-
-/* --------------- */
 /* Title Bar */
 /* --------------- */
 
@@ -1356,7 +1404,8 @@ body.full-borders .side-dock-ribbon {
 /* --------------- */
 
 /* Fancy cursor */
-.CodeMirror-cursor {
+.CodeMirror-cursor,
+.cm-s-obsidian .cm-cursor {
   border: none;
   border-right: 2px solid var(--text-accent);
 }
@@ -2924,6 +2973,10 @@ pre .copy-code-button:hover {
 .cm-s-obsidian .cm-hmd-frontmatter {
   font-size: var(--font-adaptive-small);
   color: var(--text-muted);
+}
+.markdown-source-view.mod-cm6 .code-block-flair {
+  color: var(--text-muted);
+  padding: 5px;
 }
 
 /* Atom coloring */
@@ -5212,6 +5265,84 @@ body .kanban-plugin__markdown-preview-view ul,
   border: none;
 }
 
+/* --------------- */
+/* MacOs-like Translucency */
+/* --------------- */
+
+.is-translucent:not(.macOS-translucent).theme-light {
+  --opacity-translucency: 0.6;
+}
+
+.is-translucent:not(.macOS-translucent).theme-dark {
+  --opacity-translucency: 0.7;
+}
+
+.is-translucent .workspace-leaf-resize-handle {
+  opacity: var(--opacity-translucency);
+  background-color: transparent;
+}
+
+.macOS-translucent.is-translucent.is-translucent ::-webkit-scrollbar {
+  display: none;
+}
+
+.macOS-translucent.is-translucent .titlebar,
+.macOS-translucent.is-translucent .status-bar {
+  background-color: var(--background-translucent) !important;
+}
+
+.macOS-translucent.is-translucent .titlebar-button:hover {
+  background-color: var(--background-primary);
+}
+
+.macOS-translucent.is-translucent .workspace {
+  background-color: var(--background-translucent) !important;
+}
+
+.macOS-translucent.is-translucent .workspace-split .workspace-tabs {
+  background: var(--background-primary) !important;
+}
+
+.macOS-translucent.is-translucent .workspace-tab-container-inner {
+  background-color: transparent !important;
+  border: transparent;
+}
+
+.macOS-translucent.is-translucent .workspace-split .workspace-tabs,
+.macOS-translucent.is-translucent .graph-controls,
+.macOS-translucent.is-translucent .nav-file-title.is-active {
+  background-color: transparent !important;
+  box-shadow: inset -10px 0 4px -10px rgba(0, 0, 0, 0.04);
+}
+
+.focus-mode.macOS-translucent.is-translucent .workspace {
+  background-color: var(--background-primary) !important;
+}
+
+.macOS-translucent.is-translucent .workspace-ribbon.mod-right,
+.macOS-translucent.is-translucent .workspace-ribbon.mod-left {
+  background: transparent;
+}
+
+.macOS-translucent.is-translucent .mod-horizontal .workspace-leaf {
+  border-bottom: 0px;
+  background-color: transparent;
+  box-shadow: none !important;
+}
+
+.macOS-translucent.is-translucent.theme-light .workspace {
+  --text-muted: hsl(
+    var(--base-h),
+    calc(var(--base-s) - 3%),
+    calc(var(--base-l) - 50%)
+  );
+  --svg-faint: hsl(
+    var(--base-h),
+    calc(var(--base-s) - 3%),
+    calc(var(--base-l) - 38%)
+  );
+}
+
 /* --------------------------------------------------------------------------------
 Icon replacement
 Thanks to Kepano, Matthew Meyers, and Chetachi Ezikeuzor
@@ -6124,6 +6255,30 @@ settings:
         format: hex
         default: '#3EB4BF' 
     - 
+        id: tag-background-color-l
+        title: Tag background color (Light mode)
+        type: variable-color
+        format: hex
+        default: '#BDE1D3' 
+    - 
+        id: tag-font-color-l
+        title: Tag font color (Light mode)
+        type: variable-color
+        format: hex
+        default: '#1D694B' 
+    - 
+        id: tag-background-color-d
+        title: Tag background color (Dark mode)
+        type: variable-color
+        format: hex
+        default: '#1D694B' 
+    - 
+        id: tag-font-color-d
+        title: Tag font color (Dark mode)
+        type: variable-color
+        format: hex
+        default: '#' 
+    - 
         id: font-normal
         title: Note titles, modals, and alt text size
         description: Font size in px (main editor/preview text size now controlled via slider in Appearance settings)
@@ -6148,7 +6303,7 @@ settings:
         title: Normal line width
         description: Number of characters per line
         type: variable-number
-        default: 40
+        default: 45
         format: rem
     -
         id: max-width
@@ -6314,6 +6469,11 @@ settings:
         level: 2
         collapsed: true
     -
+        title: MacOS-Like Translucent Window
+        description: Give workspace a MacOS-like translucency
+        id: macOS-translucent
+        type: class-toggle
+    -
         id: cursor
         title: Cursor style
         description: The cursor style for UI elements
@@ -6333,7 +6493,7 @@ settings:
         id: credits
         title: Credits
         type: heading
-        description: Created with ❤︎ by @colineckert. Support my work at buymeacoffee.com/colineckert
+        description: Created with ❤︎ @colineckert. This theme uses code from Minimal by @kepano. Support @kepano at buymeacoffee.com/kepano and me at buymeacoffee.com/colineckert
         level: 2
         collapsed: true
 

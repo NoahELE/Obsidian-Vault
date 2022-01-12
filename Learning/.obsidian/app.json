@@ -8,5 +8,7 @@
   "strictLineBreaks": true,
   "tabSize": 4,
   "spellcheckDictionary": [],
-  "fileSortOrder": "byCreatedTime"
+  "fileSortOrder": "byCreatedTime",
+  "legacyEditor": false,
+  "livePreview": true
 }
