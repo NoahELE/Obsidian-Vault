@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "Week 1",
+      "path": "Probablity/Week 1.md"
+    },
+    {
+      "basename": "Proof and Mathematical Logic",
+      "path": "Real Analysis/Proof and Mathematical Logic.md"
+    },
+    {
+      "basename": "UML",
+      "path": "Object Oriented Programming/UML.md"
+    },
+    {
+      "basename": "Default Kanban",
+      "path": "Default Kanban.md"
+    },
+    {
+      "basename": "UML",
+      "path": "UML.md"
+    },
+    {
       "basename": "Stack",
       "path": "Algorithms and Data Structures/Stack.md"
     },
@@ -95,18 +115,6 @@
     {
       "basename": "P & NP",
       "path": "Algorithms and Data Structures/P & NP.md"
-    },
-    {
-      "basename": "UML",
-      "path": "Object Oriented Programming/UML.md"
-    },
-    {
-      "basename": "UML",
-      "path": "UML.md"
-    },
-    {
-      "basename": "Default Kanban",
-      "path": "Default Kanban.md"
     }
   ],
   "omittedPaths": [],

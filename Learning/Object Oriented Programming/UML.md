@@ -1,11 +1,16 @@
+---
+date created: 2022-01-26 22:25
+date updated: 2022-02-02 23:04
+---
+
 # UML
 
 Unified Modeling Language (UML): a graphical modeling language that can be used to represent object oriented analysis, design and implementation.
 
-- \+ Public
-- \~ Package
-- \# Protected
-- \- Private
+- - Public
+- ~ Package
+- # Protected
+- - Private
 
 Four types of common relationships:
 
@@ -23,19 +28,21 @@ Four types of common relationships:
 ### Properties of Association
 
 - Name
+
 - Role labels
+
 - Directional
 
-	- Unidirectional (hierarchical, ownership)
-	- Bidirectional (co-operation)
+  - Unidirectional (hierarchical, ownership)
+  - Bidirectional (co-operation)
+
 - Multiplicity
 
 - Type
 
-	- Plain association
-	- Aggregation
-	- Composition
-
+  - Plain association
+  - Aggregation
+  - Composition
 
 #### Multiplicity
 
@@ -80,11 +87,10 @@ Different form of association, indicating one class cannot exist without the oth
 
 ### Abstract Classes
 
-*Italic* methods or classes are abstract.
+_Italic_ methods or classes are abstract.
 
 ## Realization - Interfaces
 
 ## Dependency
 
 Dependency represents a weak relationship between classes; dependency implies that a change to one class may impact the other class. It is represented by a dotted arrow.
-

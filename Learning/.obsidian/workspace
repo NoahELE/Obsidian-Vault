@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Algorithms and Data Structures/Stack.md",
+            "file": "Probablity/Week 1.md",
             "mode": "source",
             "source": false
           }
@@ -22,7 +22,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Algorithms and Data Structures/Stack.md",
+            "file": "Probablity/Week 1.md",
             "mode": "preview",
             "source": false
           }
@@ -91,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algorithms and Data Structures/Stack.md",
+                "file": "Probablity/Week 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algorithms and Data Structures/Stack.md"
+                "file": "Probablity/Week 1.md"
               }
             }
           },
@@ -138,15 +138,15 @@
   },
   "active": "cf4ef1d040f996ad",
   "lastOpenFiles": [
+    "Probablity/Week 1.md",
+    "Real Analysis/Proof and Mathematical Logic.md",
+    "Object Oriented Programming/UML.md",
+    "Default Kanban.md",
+    "UML.md",
     "Algorithms and Data Structures/Stack.md",
     "Object Oriented Programming/30分钟学会UML类图.md",
     "Algorithms and Data Structures/Heaps.md",
     "Object Oriented Programming/Design Patterns.md",
-    "Object Oriented Programming/Design Patterns for Humans.md",
-    "Database Systems/Relational Algebra.md",
-    "Database Systems/Transactoins.md",
-    "Database Systems/Database Administration.md",
-    "Database Systems/Normalization.md",
-    "Database Systems/Database Warehousing.md"
+    "Object Oriented Programming/Design Patterns for Humans.md"
   ]
 }

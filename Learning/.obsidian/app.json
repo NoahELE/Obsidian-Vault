@@ -10,5 +10,10 @@
   "spellcheckDictionary": [],
   "fileSortOrder": "byCreatedTime",
   "legacyEditor": false,
-  "livePreview": true
+  "livePreview": true,
+  "spellcheckLanguages": [
+    "en-AU",
+    "en-US",
+    "en-GB"
+  ]
 }
