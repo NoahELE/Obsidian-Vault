@@ -1,6 +1,6 @@
 ---
 date created: Wednesday, March 2nd 2022, 10:09:31 am
-date modified: Friday, April 8th 2022, 1:48:03 pm
+date modified: Friday, April 8th 2022, 6:20:41 pm
 ---
 
 # Week 1
@@ -23,9 +23,9 @@ _Operations of events are the same as those of sets._
 
 1. sub-event: $A \subseteq B$
     - if $A \subseteq B$ and $B \supseteq A$, $A = B$
-1. intersection: $A \cap B$
-2. union: $A \cup B$
-3. complement: $A'$
+2. intersection: $A \cap B$
+3. union: $A \cup B$
+4. complement: $A'$
 
 Definition:
 
@@ -71,10 +71,8 @@ In the case of a _discrete sample space_, probability can be equivalently define
 **The classic probability model**:
 
 - A special type of experiment:
-
     - number of possible outcomes are finite, i.e. S is finite
     - all possible outcomes are equally likely, i.e. $P(\{\omega _1\}) = P(\{\omega_2\}) = … = P(\{\omega_n\}) = \frac{1}{n}$
-
 - Probability of any event A is $P(A) = \frac{n(A)}{n}$
 
 All counting techniques derived from 2 basic counting rules

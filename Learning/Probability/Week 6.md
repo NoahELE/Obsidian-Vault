@@ -1,6 +1,6 @@
 ---
 date created: Monday, April 4th 2022, 11:17:44 am
-date modified: Friday, April 8th 2022, 4:17:41 pm
+date modified: Friday, April 8th 2022, 4:17:44 pm
 ---
 
 # Week 6

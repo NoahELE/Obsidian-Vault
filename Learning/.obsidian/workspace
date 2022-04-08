@@ -7,9 +7,11 @@
         "id": "85d98bc5757ffb40",
         "type": "leaf",
         "state": {
-          "type": "kanban",
+          "type": "markdown",
           "state": {
-            "file": "Default Kanban.md"
+            "file": "Probability/Week 6.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -110,7 +112,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Default Kanban.md"
+                "file": "Probability/Week 6.md"
               }
             }
           },
@@ -135,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Default Kanban.md",
+                "file": "Probability/Week 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Default Kanban.md",
+                "file": "Probability/Week 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,15 +169,15 @@
   },
   "active": "85d98bc5757ffb40",
   "lastOpenFiles": [
+    "Probability/Week 6.md",
+    "Probability/Week 5.md",
+    "Real Analysis/Functions and Sequences Part II.md",
+    "Probability/Week 1.md",
     "Default Kanban.md",
     "Real Analysis Assignment 3.md",
     "UML.md",
     "Untitled Kanban.md",
-    "Probability/Week 6.md",
     "Elements of Data Processing/Week 5.md",
-    "Elements of Data Processing/Week 6.md",
-    "Real Analysis/Proof and Mathematical Logic.md",
-    "Algorithms and Data Structures/Queues.md",
-    "Algorithms and Data Structures/Sorting Algorithms.md"
+    "Elements of Data Processing/Week 6.md"
   ]
 }
