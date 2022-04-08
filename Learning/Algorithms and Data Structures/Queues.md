@@ -1,3 +1,8 @@
+---
+date created: Tuesday, January 4th 2022, 10:53:47 am
+date modified: Friday, April 8th 2022, 1:55:17 pm
+---
+
 # Queues
 
 Insert at tail (newest) and remove from head (oldest)

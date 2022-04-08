@@ -1,3 +1,8 @@
+---
+date created: Tuesday, January 4th 2022, 10:53:47 am
+date modified: Friday, April 8th 2022, 1:55:30 pm
+---
+
 # Sorting Algorithms
 
 ## Insertion Sort
@@ -64,6 +69,7 @@ time complexity:
 - worst - $\Theta(nlogn)$
 
 extra space:
+
 - top-down
     - array - $\Theta(n)$
     - linked list - $\Theta(logn)$

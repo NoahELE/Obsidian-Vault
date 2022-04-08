@@ -1,3 +1,8 @@
+---
+date created: Tuesday, January 4th 2022, 10:53:47 am
+date modified: Friday, April 8th 2022, 1:53:32 pm
+---
+
 # Distributed Databases
 
 Distributed Database:
@@ -10,7 +15,7 @@ Decentralized Database:
 - a collection of independent databases which are not networked together as one logical database
 - appears to users as though many databases
 
-## Advantages of distributed DBMS
+## Advantages of Distributed DBMS
 
 - Good fit for geographically distributed organizations / users
 - Data located near site with greatest demand
@@ -20,7 +25,7 @@ Decentralized Database:
 - Increased reliability and availability
 - Supports database recovery
 
-## Disadvantages of distributed DBMS
+## Disadvantages of Distributed DBMS
 
 - Complexity of management and control
 - Data integrity
@@ -29,12 +34,12 @@ Decentralized Database:
 - Increased training & maintenance costs
 - Increased storage requirements
 
-## Objectives of distributed DBMS
+## Objectives of Distributed DBMS
 
 - Location transparency: a user does not need to know where particular data are stored
 - Local autonomy: a node can continue to function for local users if connectivity to the network is lost
 
-## Distribution options
+## Distribution Options
 
 Data replication is a process of duplicating data to different nodes.
 
@@ -70,14 +75,14 @@ Data partitioning is the process of partitioning data into subsets that are ship
 - Availability vs Consistency
 - Synchronous vs Asynchronous updates
 
-### Synchronous updates
+### Synchronous Updates
 
 - Data is continuously kept up to date
 - If any copy of a data item is updated anywhere on the network, the same update is immediately applied to all other copies or it is aborted
 - Ensures data integrity and minimizes the complexity of knowing where the most recent copy of data is located
 - Can result in slow response time and high network usage
 
-### Asynchronous updates
+### Asynchronous Updates
 
 - Some delay in propagating data updates to remote databases
 - Acceptable response time

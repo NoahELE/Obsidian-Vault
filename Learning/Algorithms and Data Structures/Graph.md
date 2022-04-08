@@ -1,3 +1,8 @@
+---
+date created: Tuesday, January 4th 2022, 10:53:47 am
+date modified: Friday, April 8th 2022, 1:55:57 pm
+---
+
 # Graph
 
 Graph:
@@ -33,15 +38,15 @@ Compared to trees and linked lists:
 
 Edges have no direction specified
 
-### Connected Undirected graph
+### Connected Undirected Graph
 
 Every pair of vertices is connected (possibly indirectly)
 
-### Unconnected Undirected graph
+### Unconnected Undirected Graph
 
 has unconnected components
 
-## Directed graph
+## Directed Graph
 
 - Edge direction is specified
 - Links are not symmetrical
@@ -52,14 +57,14 @@ Replace all directed edges with undirected edges, to obtain a connected (undirec
 
 ### Strongly Connected Directed Graph
 
-If *every vertex* is **reachable** from *every other vertex*
+If _every vertex_ is **reachable** from _every other vertex_
 
 ## Bipartite Graph
 
 - U and V are disjoint sets of vertexes
 - Every vertex in U connects to a vertex in V, and vice versa
 
-## Complete graph
+## Complete Graph
 
 all vertices is directly connected to all other vertices
 
@@ -136,13 +141,13 @@ The steps of this algorithm are:
 
 1. Push the source vertex into the stack
 2. While the stack is not empty:
-    1. Pop a vertex from the stack
-    2. If said vertex is:
-        1. the destination: stop
-        2. visited: continue
-        3. unvisited:
-            1. Mark it as visited
-            2. Push its unvisited neighbors into the stack
+   1. Pop a vertex from the stack
+   2. If said vertex is:
+      1. the destination: stop
+      2. visited: continue
+      3. unvisited:
+         1. Mark it as visited
+         2. Push its unvisited neighbors into the stack
 
 ### Breadth-First Search
 
@@ -160,12 +165,12 @@ The steps of this algorithm are:
 1. Enqueue the source vertex into the queue
 2. Mark said vertex as visited
 3. While the queue is not empty:
-    1. Dequeue a vertex from the queue
-    2. If said vertex is:
-        1. the destination: stop
-        2. otherwise:
-            1. Mark its unvisited neighbors as visited
-            2. Enqueue said neighbours into the queue
+   1. Dequeue a vertex from the queue
+   2. If said vertex is:
+      1. the destination: stop
+      2. otherwise:
+         1. Mark its unvisited neighbors as visited
+         2. Enqueue said neighbours into the queue
 
 ### Uniform Cost Search
 

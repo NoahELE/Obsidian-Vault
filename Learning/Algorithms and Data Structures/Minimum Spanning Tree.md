@@ -1,3 +1,8 @@
+---
+date created: Tuesday, January 4th 2022, 10:53:47 am
+date modified: Friday, April 8th 2022, 1:54:56 pm
+---
+
 # Minimum Spanning Tree
 
 Undirected weighted graphs
@@ -15,7 +20,7 @@ Also called:
 
 Graph must be connected
 
-MST must have exactly V‐ 1 edges
+MST must have exactly V1 edges
 
 No cycles in MST
 

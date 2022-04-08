@@ -1,6 +1,12 @@
+---
+date created: Tuesday, January 4th 2022, 10:53:47 am
+date modified: Friday, April 8th 2022, 1:53:06 pm
+---
+
 # Database Development Process
 
 Three Design Process:
+
 - Conceptual
 - Logical
 - Physical
@@ -14,7 +20,7 @@ Three Design Process:
 
 - Construction of a (relational) model of the data based on the conceptual design
 - Independent of a specific database and other physical considerations
-    - e.g. adding foreign keys in the model
+  - e.g. adding foreign keys in the model
 
 ## Physical Design
 

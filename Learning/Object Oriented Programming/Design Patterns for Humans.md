@@ -1,6 +1,10 @@
+---
+date created: Tuesday, January 4th 2022, 10:53:47 am
+date modified: Friday, April 8th 2022, 1:56:28 pm
+---
 ![Design Patterns For Humans](https://cloud.githubusercontent.com/assets/11269635/23065273/1b7e5938-f515-11e6-8dd3-d0d58de6bb9a.png)
 
-***
+---
 
 <p align="center">
 🎉 Ultra-simplified explanation to design patterns! 🎉
@@ -11,7 +15,7 @@ A topic that can easily make anyone's mind wobble. Here I try to make them stick
 
 </p>
 
-***
+---
 
 <sub>Check out my [blog](http://kamranahmed.info) and say "hi" on [Twitter](https://twitter.com/kamranahmedse).</sub>
 
@@ -27,8 +31,8 @@ Wikipedia describes them as
 
 > In software engineering, a software design pattern is a general reusable solution to a commonly occurring problem within a given context in software design. It is not a finished design that can be transformed directly into source or machine code. It is a description or template for how to solve a problem that can be used in many different situations.
 
-⚠️ Be Careful
------------------
+# ⚠️ Be Careful
+
 - Design patterns are not a silver bullet to all your problems.
 - Do not try to force them; bad things are supposed to happen, if done so.
 - Keep in mind that design patterns are solutions **to** problems, not solutions **finding** problems; so don't overthink.
@@ -38,11 +42,11 @@ Wikipedia describes them as
 
 Types of Design Patterns
 
------------------
+---
 
-* [Creational](#creational-design-patterns)
-* [Structural](#structural-design-patterns)
-* [Behavioral](#behavioral-design-patterns)
+- [Creational](#creational-design-patterns)
+- [Structural](#structural-design-patterns)
+- [Behavioral](#behavioral-design-patterns)
 
 Creational Design Patterns
 
@@ -56,15 +60,14 @@ Wikipedia says
 
 > In software engineering, creational design patterns are design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. The basic form of object creation could result in design problems or added complexity to the design. Creational design patterns solve this problem by somehow controlling this object creation.
 
- * [Simple Factory](#-simple-factory)
- * [Factory Method](#-factory-method)
- * [Abstract Factory](#-abstract-factory)
- * [Builder](#-builder)
- * [Prototype](#-prototype)
- * [Singleton](#-singleton)
+- [Simple Factory](#-simple-factory)
+- [Factory Method](#-factory-method)
+- [Abstract Factory](#-abstract-factory)
+- [Builder](#-builder)
+- [Prototype](#-prototype)
+- [Singleton](#-singleton)
 
-🏠 Simple Factory
---------------
+# 🏠 Simple Factory
 
 Real world example
 
@@ -136,8 +139,7 @@ $door2 = DoorFactory::makeDoor(50, 100);
 
 When creating an object is not just a few assignments and involves some logic, it makes sense to put it in a dedicated factory instead of repeating the same code everywhere.
 
-🏭 Factory Method
---------------
+# 🏭 Factory Method
 
 Real world example
 
@@ -151,7 +153,7 @@ Wikipedia says
 
 > In class-based programming, the factory method pattern is a creational pattern that uses factory methods to deal with the problem of creating objects without having to specify the exact class of the object that will be created. This is done by creating objects by calling a factory method—either specified in an interface and implemented by child classes, or implemented in a base class and optionally overridden by derived classes—rather than by calling a constructor.
 
- **Programmatic Example**
+**Programmatic Example**
 
 Taking our hiring manager example above. First of all we have an interviewer interface and some implementations for it
 
@@ -230,8 +232,7 @@ $marketingManager->takeInterview(); // Output: Asking about community building.
 
 Useful when there is some generic processing in a class but the required sub-class is dynamically decided at runtime. Or putting it in other words, when the client doesn't know what exact sub-class it might need.
 
-🔨 Abstract Factory
-----------------
+# 🔨 Abstract Factory
 
 Real world example
 
@@ -362,12 +363,11 @@ As you can see the wooden door factory has encapsulated the `carpenter` and the 
 
 When there are interrelated dependencies with not-that-simple creation logic involved
 
-👷 Builder
---------------------------------------------
+# 👷 Builder
 
 Real world example
 
-> Imagine you are at Hardee's and you order a specific deal, lets say, "Big Hardee" and they hand it over to you without *any questions*; this is the example of simple factory. But there are cases when the creation logic might involve more steps. For example you want a customized Subway deal, you have several options in how your burger is made e.g what bread do you want? what types of sauces would you like? What cheese would you want? etc. In such cases builder pattern comes to the rescue.
+> Imagine you are at Hardee's and you order a specific deal, lets say, "Big Hardee" and they hand it over to you without _any questions_; this is the example of simple factory. But there are cases when the creation logic might involve more steps. For example you want a customized Subway deal, you have several options in how your burger is made e.g what bread do you want? what types of sauces would you like? What cheese would you want? etc. In such cases builder pattern comes to the rescue.
 
 In plain words
 
@@ -474,8 +474,7 @@ $burger = (new BurgerBuilder(14))
 
 When there could be several flavors of an object and to avoid the constructor telescoping. The key difference from the factory pattern is that; factory pattern is to be used when the creation is a one step process while builder pattern is to be used when the creation is a multi step process.
 
-🐑 Prototype
-------------
+# 🐑 Prototype
 
 Real world example
 
@@ -549,8 +548,7 @@ Also you could use the magic method `__clone` to modify the cloning behavior.
 
 When an object is required that is similar to existing object or when the creation would be expensive as compared to cloning.
 
-💍 Singleton
-------------
+# 💍 Singleton
 
 Real world example
 
@@ -622,16 +620,15 @@ Wikipedia says
 
 > In software engineering, structural design patterns are design patterns that ease the design by identifying a simple way to realize relationships between entities.
 
- * [Adapter](#-adapter)
- * [Bridge](#-bridge)
- * [Composite](#-composite)
- * [Decorator](#-decorator)
- * [Facade](#-facade)
- * [Flyweight](#-flyweight)
- * [Proxy](#-proxy)
+- [Adapter](#-adapter)
+- [Bridge](#-bridge)
+- [Composite](#-composite)
+- [Decorator](#-decorator)
+- [Facade](#-facade)
+- [Flyweight](#-flyweight)
+- [Proxy](#-proxy)
 
-🔌 Adapter
--------
+# 🔌 Adapter
 
 Real world example
 
@@ -724,8 +721,7 @@ $hunter = new Hunter();
 $hunter->hunt($wildDogAdapter);
 ```
 
-🚡 Bridge
-------
+# 🚡 Bridge
 
 Real world example
 
@@ -827,8 +823,7 @@ echo $about->getContent(); // "About page in Dark Black";
 echo $careers->getContent(); // "Careers page in Dark Black";
 ```
 
-🌿 Composite
------------------
+# 🌿 Composite
 
 Real world example
 
@@ -963,8 +958,7 @@ $organization->addEmployee($jane);
 echo "Net salaries: " . $organization->getNetSalaries(); // Net Salaries: 27000
 ```
 
-☕ Decorator
--------------
+# ☕ Decorator
 
 Real world example
 
@@ -1087,8 +1081,7 @@ echo $someCoffee->getCost(); // 20
 echo $someCoffee->getDescription(); // Simple Coffee, milk, whip, vanilla
 ```
 
-📦 Facade
-----------------
+# 📦 Facade
 
 Real world example
 
@@ -1183,8 +1176,7 @@ $computer->turnOn(); // Ouch! Beep beep! Loading.. Ready to be used!
 $computer->turnOff(); // Bup bup buzzz! Haah! Zzzzz
 ```
 
-🍃 Flyweight
----------
+# 🍃 Flyweight
 
 Real world example
 
@@ -1268,8 +1260,7 @@ $shop->serve();
 // Serving tea to table# 5
 ```
 
-🎱 Proxy
--------------------
+# 🎱 Proxy
 
 Real world example
 
@@ -1365,19 +1356,18 @@ Wikipedia says
 
 > In software engineering, behavioral design patterns are design patterns that identify common communication patterns between objects and realize these patterns. By doing so, these patterns increase flexibility in carrying out this communication.
 
-* [Chain of Responsibility](#-chain-of-responsibility)
-* [Command](#-command)
-* [Iterator](#-iterator)
-* [Mediator](#-mediator)
-* [Memento](#-memento)
-* [Observer](#-observer)
-* [Visitor](#-visitor)
-* [Strategy](#-strategy)
-* [State](#-state)
-* [Template Method](#-template-method)
+- [👽 Mediator](#-mediator)
+  - [💾 Memento](#-memento)
+  - [😎 Observer](#-observer)
+  - [🏃 Visitor](#-visitor)
+  - [💡 Strategy](#-strategy)
+  - [💢 State](#-state)
+  - [📒 Template Method](#-template-method)
+- [🚦 Wrap Up Folks](#-wrap-up-folks)
+- [👬 Contribution](#-contribution)
+- [License](#license)
 
-🔗 Chain of Responsibility
------------------------
+# 🔗 Chain of Responsibility
 
 Real world example
 
@@ -1482,8 +1472,7 @@ $bank->pay(259);
 // Paid 259 using Bitcoin!
 ```
 
-👮 Command
--------
+# 👮 Command
 
 Real world example
 
@@ -1608,8 +1597,7 @@ $remote->submit($turnOff); // Darkness!
 
 Command pattern can also be used to implement a transaction based system. Where you keep maintaining the history of commands as soon as you execute them. If the final command is successfully executed, all good otherwise just iterate through the history and keep executing the `undo` on all the executed commands.
 
-➿ Iterator
---------
+# ➿ Iterator
 
 Real world example
 
@@ -1720,8 +1708,7 @@ foreach($stationList as $station) {
 $stationList->removeStation(new RadioStation(89)); // Will remove station 89
 ```
 
-👽 Mediator
-========
+ 👽 Mediator
 
 Real world example
 
@@ -1798,8 +1785,7 @@ $jane->send('Hey!');
 // Feb 14, 10:58 [Jane]: Hey!
 ```
 
-💾 Memento
--------
+# 💾 Memento
 
 Real world example
 
@@ -1891,8 +1877,7 @@ $editor->restore($saved);
 $editor->getContent(); // This is the first sentence. This is second.
 ```
 
-😎 Observer
---------
+# 😎 Observer
 
 Real world example
 
@@ -1989,8 +1974,7 @@ $jobPostings->addJob(new JobPost('Software Engineer'));
 // Hi Jane Doe! New job posted: Software Engineer
 ```
 
-🏃 Visitor
--------
+# 🏃 Visitor
 
 Real world example
 
@@ -2140,8 +2124,7 @@ $dolphin->accept($speak);  // Tuut tutt tuutt!
 $dolphin->accept($jump);   // Walked on water a little and disappeared
 ```
 
-💡 Strategy
---------
+# 💡 Strategy
 
 Real world example
 
@@ -2219,8 +2202,7 @@ $sorter = new Sorter(new QuickSortStrategy());
 $sorter->sort($dataset); // Output : Sorting using quick sort
 ```
 
-💢 State
------
+# 💢 State
 
 Real world example
 
@@ -2321,12 +2303,12 @@ $editor->type('Fifth line');
 // fifth line
 ```
 
-📒 Template Method
----------------
+# 📒 Template Method
 
 Real world example
 
 > Suppose we are getting some house built. The steps for building might look like
+>
 > - Prepare the base of house
 > - Build the walls
 > - Add roof
@@ -2440,17 +2422,17 @@ $iosBuilder->build();
 // Deploying ios build to server
 ```
 
-# 🚦 Wrap Up Folks
+ 🚦 Wrap Up Folks
 
 And that about wraps it up. I will continue to improve this, so you might want to watch/star this repository to revisit. Also, I have plans on writing the same about the architectural patterns, stay tuned for it.
 
-# 👬 Contribution
+ 👬 Contribution
 
 - Report issues
 - Open pull request with improvements
 - Spread the word
 - Reach out with any feedback [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/kamranahmedse.svg?style=social&label=Follow%20%40kamranahmedse)](https://twitter.com/kamranahmedse)
 
-# License
+ License
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)

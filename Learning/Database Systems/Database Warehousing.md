@@ -1,3 +1,8 @@
+---
+date created: Tuesday, January 4th 2022, 10:53:47 am
+date modified: Friday, April 8th 2022, 1:53:14 pm
+---
+
 # Database Warehousing
 
 To solve:
@@ -29,6 +34,7 @@ numerical aggregation and dimensions
 ## Dimensional Modeling
 
 consists of:
+
 - fact table
 - several dimensional tables
 - (sometimes) hierarchies in the dimensions

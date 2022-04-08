@@ -1,16 +1,16 @@
 ---
-date created: 2022-01-26 22:25
-date updated: 2022-02-02 23:04
+date created: Tuesday, January 4th 2022, 10:53:47 am
+date modified: Friday, April 8th 2022, 1:56:51 pm
 ---
 
 # UML
 
 Unified Modeling Language (UML): a graphical modeling language that can be used to represent object oriented analysis, design and implementation.
 
-- - Public
-- ~ Package
-- # Protected
-- - Private
+- `+` Public
+- `~` Package
+- `#` Protected
+- `-` Private
 
 Four types of common relationships:
 
@@ -28,21 +28,15 @@ Four types of common relationships:
 ### Properties of Association
 
 - Name
-
 - Role labels
-
 - Directional
-
-  - Unidirectional (hierarchical, ownership)
-  - Bidirectional (co-operation)
-
+    - Unidirectional (hierarchical, ownership)
+    - Bidirectional (co-operation)
 - Multiplicity
-
 - Type
-
-  - Plain association
-  - Aggregation
-  - Composition
+    - Plain association
+    - Aggregation
+    - Composition
 
 #### Multiplicity
 
@@ -66,10 +60,10 @@ Multiplicity can be expressed as:
 
 - Exactly one - 1
 - Zero or one - 0..1
-- Many - 0..* or *
-- One or more - 1..*
+- Many - 0.._or_
+- One or more - 1..\*
 - Exact Number - e.g. 3..4 or 6
-- Or a complex relationship – e.g. 0..1, 3..4, 6..* would mean any number of objects other than 2 or 5
+- Or a complex relationship – e.g. 0..1, 3..4, 6..\* would mean any number of objects other than 2 or 5
 
 Multiple Associations: express the multiple relationships between **classes**.
 

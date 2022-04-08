@@ -1,18 +1,6 @@
 {
   "recentFiles": [
     {
-      "basename": "Week 1",
-      "path": "Probablity/Week 1.md"
-    },
-    {
-      "basename": "Proof and Mathematical Logic",
-      "path": "Real Analysis/Proof and Mathematical Logic.md"
-    },
-    {
-      "basename": "UML",
-      "path": "Object Oriented Programming/UML.md"
-    },
-    {
       "basename": "Default Kanban",
       "path": "Default Kanban.md"
     },
@@ -21,80 +9,32 @@
       "path": "UML.md"
     },
     {
-      "basename": "Stack",
-      "path": "Algorithms and Data Structures/Stack.md"
+      "basename": "Week 6",
+      "path": "Probability/Week 6.md"
     },
     {
-      "basename": "30分钟学会UML类图",
-      "path": "Object Oriented Programming/30分钟学会UML类图.md"
+      "basename": "Week 5",
+      "path": "Elements of Data Processing/Week 5.md"
     },
     {
-      "basename": "Heaps",
-      "path": "Algorithms and Data Structures/Heaps.md"
+      "basename": "Week 6",
+      "path": "Elements of Data Processing/Week 6.md"
     },
     {
-      "basename": "Design Patterns",
-      "path": "Object Oriented Programming/Design Patterns.md"
+      "basename": "Proof and Mathematical Logic",
+      "path": "Real Analysis/Proof and Mathematical Logic.md"
     },
     {
-      "basename": "Design Patterns for Humans",
-      "path": "Object Oriented Programming/Design Patterns for Humans.md"
-    },
-    {
-      "basename": "Relational Algebra",
-      "path": "Database Systems/Relational Algebra.md"
-    },
-    {
-      "basename": "Transactoins",
-      "path": "Database Systems/Transactoins.md"
-    },
-    {
-      "basename": "Database Administration",
-      "path": "Database Systems/Database Administration.md"
-    },
-    {
-      "basename": "Normalization",
-      "path": "Database Systems/Normalization.md"
-    },
-    {
-      "basename": "Database Warehousing",
-      "path": "Database Systems/Database Warehousing.md"
-    },
-    {
-      "basename": "Distributed Databases",
-      "path": "Database Systems/Distributed Databases.md"
-    },
-    {
-      "basename": "NoSQL Databases",
-      "path": "Database Systems/NoSQL Databases.md"
-    },
-    {
-      "basename": "Database Development Process",
-      "path": "Database Systems/Database Development Process.md"
-    },
-    {
-      "basename": "ER Modeling",
-      "path": "Database Systems/ER Modeling.md"
-    },
-    {
-      "basename": "Relational Model & Translating ER diagrams",
-      "path": "Database Systems/Relational Model & Translating ER diagrams.md"
+      "basename": "Queues",
+      "path": "Algorithms and Data Structures/Queues.md"
     },
     {
       "basename": "Sorting Algorithms",
       "path": "Algorithms and Data Structures/Sorting Algorithms.md"
     },
     {
-      "basename": "Trees",
-      "path": "Algorithms and Data Structures/Trees.md"
-    },
-    {
       "basename": "Dictionaries",
       "path": "Algorithms and Data Structures/Dictionaries.md"
-    },
-    {
-      "basename": "Queues",
-      "path": "Algorithms and Data Structures/Queues.md"
     },
     {
       "basename": "Graph",
@@ -105,6 +45,10 @@
       "path": "Algorithms and Data Structures/Hash Tables.md"
     },
     {
+      "basename": "P & NP",
+      "path": "Algorithms and Data Structures/P & NP.md"
+    },
+    {
       "basename": "Minimum Spanning Tree",
       "path": "Algorithms and Data Structures/Minimum Spanning Tree.md"
     },
@@ -113,8 +57,128 @@
       "path": "Algorithms and Data Structures/Merge Sort.md"
     },
     {
-      "basename": "P & NP",
-      "path": "Algorithms and Data Structures/P & NP.md"
+      "basename": "Heaps",
+      "path": "Algorithms and Data Structures/Heaps.md"
+    },
+    {
+      "basename": "Trees",
+      "path": "Algorithms and Data Structures/Trees.md"
+    },
+    {
+      "basename": "Stack",
+      "path": "Algorithms and Data Structures/Stack.md"
+    },
+    {
+      "basename": "Database Warehousing",
+      "path": "Database Systems/Database Warehousing.md"
+    },
+    {
+      "basename": "Distributed Databases",
+      "path": "Database Systems/Distributed Databases.md"
+    },
+    {
+      "basename": "Database Development Process",
+      "path": "Database Systems/Database Development Process.md"
+    },
+    {
+      "basename": "Database Administration",
+      "path": "Database Systems/Database Administration.md"
+    },
+    {
+      "basename": "Transactoins",
+      "path": "Database Systems/Transactoins.md"
+    },
+    {
+      "basename": "Relational Model & Translating ER diagrams",
+      "path": "Database Systems/Relational Model & Translating ER diagrams.md"
+    },
+    {
+      "basename": "Relational Algebra",
+      "path": "Database Systems/Relational Algebra.md"
+    },
+    {
+      "basename": "NoSQL Databases",
+      "path": "Database Systems/NoSQL Databases.md"
+    },
+    {
+      "basename": "Normalization",
+      "path": "Database Systems/Normalization.md"
+    },
+    {
+      "basename": "ER Modeling",
+      "path": "Database Systems/ER Modeling.md"
+    },
+    {
+      "basename": "30分钟学会UML类图",
+      "path": "Object Oriented Programming/30分钟学会UML类图.md"
+    },
+    {
+      "basename": "UML",
+      "path": "Object Oriented Programming/UML.md"
+    },
+    {
+      "basename": "Design Patterns",
+      "path": "Object Oriented Programming/Design Patterns.md"
+    },
+    {
+      "basename": "Design Patterns for Humans",
+      "path": "Object Oriented Programming/Design Patterns for Humans.md"
+    },
+    {
+      "basename": "Week 4",
+      "path": "Elements of Data Processing/Week 4.md"
+    },
+    {
+      "basename": "Week 3",
+      "path": "Elements of Data Processing/Week 3.md"
+    },
+    {
+      "basename": "Week 2",
+      "path": "Elements of Data Processing/Week 2.md"
+    },
+    {
+      "basename": "Week 1",
+      "path": "Elements of Data Processing/Week 1.md"
+    },
+    {
+      "basename": "Week 5",
+      "path": "Probability/Week 5.md"
+    },
+    {
+      "basename": "Week 4",
+      "path": "Probability/Week 4.md"
+    },
+    {
+      "basename": "Week 3",
+      "path": "Probability/Week 3.md"
+    },
+    {
+      "basename": "Week 2",
+      "path": "Probability/Week 2.md"
+    },
+    {
+      "basename": "Week 1",
+      "path": "Probability/Week 1.md"
+    },
+    {
+      "basename": "Functions and Sequences Part II",
+      "path": "Real Analysis/Functions and Sequences Part II.md"
+    },
+    {
+      "basename": "Functions and Sequences",
+      "path": "Real Analysis/Functions and Sequences.md"
+    },
+    {
+      "basename": "The Real Numbers",
+      "path": "Real Analysis/The Real Numbers.md"
+    },
+    {
+      "basename": "Set Theory",
+      "path": "Real Analysis/Set Theory.md"
+    },
+    {
+      "basename": "Mathematical Proofs",
+      "path": "Real Analysis/Mathematical Proofs.md"
     }
   ],
   "omittedPaths": [],

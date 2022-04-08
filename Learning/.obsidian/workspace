@@ -4,30 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "cf4ef1d040f996ad",
+        "id": "85d98bc5757ffb40",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "kanban",
           "state": {
-            "file": "Probablity/Week 1.md",
-            "mode": "source",
-            "source": false
+            "file": "Default Kanban.md"
           }
-        },
-        "group": "f61565cf0dde6c39"
-      },
-      {
-        "id": "39bae27313f2b74b",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Probablity/Week 1.md",
-            "mode": "preview",
-            "source": false
-          }
-        },
-        "group": "f61565cf0dde6c39"
+        }
       }
     ],
     "direction": "vertical"
@@ -54,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "async",
+                "query": "pois",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,6 +53,25 @@
             "state": {
               "type": "recent-files",
               "state": {}
+            }
+          },
+          {
+            "id": "02b0470cb29b49ec",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "7704a6eb12ebf02d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
             }
           }
         ]
@@ -86,33 +89,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b3f3df539203b3cc",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Probablity/Week 1.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
-              }
-            }
-          },
-          {
-            "id": "fabd95ec43d50425",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Probablity/Week 1.md"
-              }
-            }
-          },
-          {
             "id": "91434472596a116a",
             "type": "leaf",
             "state": {
@@ -127,26 +103,79 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
+          },
+          {
+            "id": "fabd95ec43d50425",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Default Kanban.md"
+              }
+            }
+          },
+          {
+            "id": "06504f56d7d2d5d5",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
+      },
+      {
+        "id": "6afca07651a3e949",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "96e301ea32f00652",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Default Kanban.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b3f3df539203b3cc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Default Kanban.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "cf4ef1d040f996ad",
+  "active": "85d98bc5757ffb40",
   "lastOpenFiles": [
-    "Probablity/Week 1.md",
-    "Real Analysis/Proof and Mathematical Logic.md",
-    "Object Oriented Programming/UML.md",
     "Default Kanban.md",
+    "Real Analysis Assignment 3.md",
     "UML.md",
-    "Algorithms and Data Structures/Stack.md",
-    "Object Oriented Programming/30分钟学会UML类图.md",
-    "Algorithms and Data Structures/Heaps.md",
-    "Object Oriented Programming/Design Patterns.md",
-    "Object Oriented Programming/Design Patterns for Humans.md"
+    "Untitled Kanban.md",
+    "Probability/Week 6.md",
+    "Elements of Data Processing/Week 5.md",
+    "Elements of Data Processing/Week 6.md",
+    "Real Analysis/Proof and Mathematical Logic.md",
+    "Algorithms and Data Structures/Queues.md",
+    "Algorithms and Data Structures/Sorting Algorithms.md"
   ]
 }

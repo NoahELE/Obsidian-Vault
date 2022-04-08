@@ -1,3 +1,8 @@
+---
+date created: Tuesday, January 4th 2022, 10:53:47 am
+date modified: Friday, April 8th 2022, 1:53:47 pm
+---
+
 # Stack
 
 - Insert at top (newest)
@@ -5,6 +10,8 @@
 - Abstract Data Structure
     - Push – Add an item to the top of the stack
     - Pop – Take an item from the top of the stack
+
+## Implementation
 
 - Linked List
     - Push - $O(1)$ - Prepend

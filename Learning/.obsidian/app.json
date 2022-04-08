@@ -2,7 +2,7 @@
   "spellcheck": true,
   "showLineNumber": true,
   "useTab": false,
-  "vimMode": true,
+  "vimMode": false,
   "trashOption": "local",
   "promptDelete": false,
   "strictLineBreaks": true,
@@ -15,5 +15,6 @@
     "en-AU",
     "en-US",
     "en-GB"
-  ]
+  ],
+  "alwaysUpdateLinks": true
 }

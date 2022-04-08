@@ -1,3 +1,8 @@
+---
+date created: Tuesday, January 4th 2022, 10:53:47 am
+date modified: Friday, April 8th 2022, 1:51:19 pm
+---
+
 # NoSQL Databases
 
 Traditional Relational Databases: Schema on Write
@@ -46,7 +51,7 @@ graphs are difficult to program in relational database
 
 Example: Neo4j
 
-## ACID vs BASE
+## ACID Vs BASE
 
 ACID: Atomic, Consistent, Isolated, Durable
 

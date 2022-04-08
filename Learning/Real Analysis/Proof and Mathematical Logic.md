@@ -1,3 +1,8 @@
+---
+date created: Tuesday, March 1st 2022, 8:39:25 am
+date modified: Wednesday, April 6th 2022, 3:12:47 pm
+---
+
 # Proof and Mathematical Logic
 
 A primary activity in mathematics is _proving_ theorems
@@ -8,7 +13,7 @@ Definition (statement): A statement is a sentence or expression that is either t
 
 Connectives:
 
-- not (negation): $\lnot p$
+- not (negation): $\neg p$
 - and: $p \land q$
 - or: $p \lor q$
 
@@ -18,11 +23,9 @@ Connectives:
 
 - then (implication): $p \implies q$
 - if and only if: $p \iff q$
-- logically equivalent: $p \equiv q$
+- logically equivalent: $p \equiv q$ (definition: $p \iff q$ is a tautology)
 
-$$
-(p \implies q) \land (\lnot p \implies \lnot q) \equiv p \iff q
-$$
+$$(p \implies q) \land (\neg p \implies \neg q) \equiv p \iff q$$
 
 ## First Order Logic
 
@@ -33,6 +36,4 @@ Definition (existential qualifier, universal qualifier): Let $p(x)$ be a conditi
 - The statement "$p(x)$ is true for every $x$ in the domain" is denoted as $(\forall x \in D)p(x)$; $\forall$ is called the universal qualifier and the statement is a universal qualified statement.
 - The statement "$p(x)$ is true for at least one $x$ in the domain" is denoted as $(\exists x \in D)p(x)$; $\exists$ is called the existential qualifier and the statement is a existential qualified statement.
 
-$$
-\lnot[(\forall x \in D) p(x)] \equiv (\exists x \in D) \lnot p(x)
-$$
+$$\neg[(\forall x \in D)\ p(x)] \equiv (\exists x \in D)\ \neg p(x)$$

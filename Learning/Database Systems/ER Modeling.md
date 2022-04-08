@@ -1,12 +1,19 @@
+---
+date created: Tuesday, January 4th 2022, 10:53:47 am
+date modified: Friday, April 8th 2022, 2:40:32 pm
+---
+
 # ER Modeling
 
-## Basic ER modeling concepts
+## Basic ER Modeling Concepts
 
 **Entity**: Real-world object distinguishable from other objects. An entity is described (in DB) using a set of _attributes_.
+
 - represented by a Rectangle and connected with Attributes represented by circles
 
 ```mermaid
-ER Model
+erDiagram
+Model
 ```
 
 **Entity Set**: A collection of entities of the same type (e.g. all employees)

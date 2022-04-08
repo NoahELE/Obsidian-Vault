@@ -6,8 +6,9 @@
   "obsidian-mind-map",
   "recent-files-obsidian",
   "calendar",
-  "sliding-panes-obsidian",
-  "obsidian-admonition",
   "obsidian-linter",
-  "cmenu-plugin"
+  "cmenu-plugin",
+  "obsidian-checklist-plugin",
+  "obsidian-outliner",
+  "tag-wrangler"
 ]

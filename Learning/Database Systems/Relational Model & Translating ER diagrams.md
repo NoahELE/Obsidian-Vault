@@ -1,4 +1,9 @@
-# Relational Model & Translating ER diagrams
+---
+date created: Tuesday, January 4th 2022, 10:53:47 am
+date modified: Friday, April 8th 2022, 1:52:01 pm
+---
+
+# Relational Model & Translating ER Diagrams
 
 Data Model allows us to translate real world things into structures that a computer can store.
 
@@ -9,7 +14,7 @@ Relational Model:
 - Rows & Columns (Tuples/records and Attributes/fields)
 - Keys & Foreign Keys to link Relations
 
-## Relational database
+## Relational Database
 
 **Relational database**: a set of relations.
 
@@ -35,12 +40,13 @@ In physical design we choose data types
 Example: Creating the Students relation.
 
 ```sql
-CREATE TABLE Students
-    (sid CHAR(20),
+CREATE TABLE Students (
+    sid CHAR(20),
     name CHAR(20),
     login CHAR(10),
     age INTEGER,
-    gpa FLOAT)
+    gpa FLOAT
+)
 ```
 
 ## Keys & Integrity Constraints

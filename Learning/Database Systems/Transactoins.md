@@ -1,3 +1,8 @@
+---
+date created: Tuesday, January 4th 2022, 10:53:47 am
+date modified: Friday, April 8th 2022, 1:52:44 pm
+---
+
 # Transactions
 
 ## SQL Keywords
@@ -49,12 +54,12 @@ True Serializations: no concurrency (**seldom used**)
 - Exclusive Locks
     - Access is reserved for the transaction which locks the object
     - **Must** be used when WRITE
-    - Granted *if and only* if there is no other locks on the object
-    - In MySQL, `SELECT ... FOR UPDATE`
+    - Granted _if and only_ if there is no other locks on the object
+    - In MySQL, `SELECT … FOR UPDATE`
 - Shared Locks
     - Other transactions are also granted `READ` access
     - Issued when a transaction wants to `READ` the object and there is no exclusive lock on the object
-    - In MySQL, `SELECT ... FOR SHARE`
+    - In MySQL, `SELECT … FOR SHARE`
 
 #### Dead Lock
 

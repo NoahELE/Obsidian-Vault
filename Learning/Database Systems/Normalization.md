@@ -1,3 +1,8 @@
+---
+date created: Tuesday, January 4th 2022, 10:53:47 am
+date modified: Friday, April 8th 2022, 1:51:14 pm
+---
+
 # Normalization
 
 ## Anomalies
@@ -35,7 +40,7 @@ one value of Y
 
 ## Armstrong’s Axioms
 
-$A = (X_1,\ X_2,\ ...,\ X_n)$ and $B = (Y_1,\ Y_2,\ ...,\ Y_n)$
+$A = (X_1,\ X_2,\ …,\ X_n)$ and $B = (Y_1,\ Y_2,\ …,\ Y_n)$
 
 1. Reflexivity: $B \subseteq A \Rightarrow A \rightarrow B$
 2. Augmentation: $A \rightarrow B \Rightarrow AC \rightarrow BC$
@@ -49,7 +54,7 @@ A relation is normalized if all determinants are candidate keys
 - Second Normal Form(2NF): Remove partial dependencies
 - Third Normal Form(3NF): Remove transitive dependencies
 
-## Normalization vs Denormalization
+## Normalization Vs Denormalization
 
 Normalization:
 
