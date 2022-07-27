@@ -1,6 +1,6 @@
 ---
 date created: Wednesday, March 30th 2022, 12:55:37 pm
-date modified: Thursday, April 7th 2022, 4:03:03 pm
+date modified: Friday, April 29th 2022, 9:44:25 am
 ---
 
 # Week 5
@@ -53,3 +53,5 @@ A bloom filter with $I$ bits:
   - Both B1 and B2 has the same length I and use the same k hash functions
 - If 2 strings are similar which means many common bi-grams, B1 and B2 will have many identical bits set to 1.
 - Calculate the similarity with Dice Similarity
+
+> Hashing will cause collision and thus the final similarity will be an approximate of the actual similarity.

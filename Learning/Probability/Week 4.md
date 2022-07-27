@@ -56,8 +56,8 @@ Let the r.v. $X$ be the number of trials needed to obtain $r$ successes,
 - Thus, $\sum^\infty_{x = r}f(x) = p^r\sum^\infty_{x = r}\binom{x - 1}{r - 1}q^{x - r} = p^r(1 - q)^{-r} = 1$
 - mgf, $M(t) = (\frac{pe^t}{1 - (1 - p)e^t})^r$
 - mean and variance,
-    - $\mu = \frac{r}{p}$
-    - $\frac{r(1 - p)}{p^2}$
+    - $\mu = \frac r p$
+    - $\sigma^2 = \frac{r(1 - p)}{p^2}$
 
 ## Geometric Distribution
 

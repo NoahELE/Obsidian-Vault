@@ -1,6 +1,6 @@
 ---
 date created: Tuesday, April 5th 2022, 7:55:31 am
-date modified: Friday, April 8th 2022, 3:43:17 pm
+date modified: Friday, April 29th 2022, 9:58:19 am
 ---
 
 # Week 6
@@ -26,8 +26,8 @@ $$r_{xy} = \frac{\sum^n_{i = 1}(x_i - \bar x)(y_i - \bar y)}{\sqrt{(\sum^n_{i = 
 
 ## Entropy
 
-- more uncertain, less predictable &rarr; high entropy
-- less uncertain, more predictable &rarr; low entropy
+- more uncertain, less predictable → high entropy
+- less uncertain, more predictable → low entropy
 
 Entropy formula:
 

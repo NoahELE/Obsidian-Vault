@@ -1,6 +1,6 @@
 ---
 date created: Monday, March 14th 2022, 9:56:15 am
-date modified: Friday, April 8th 2022, 1:43:15 pm
+date modified: Tuesday, April 12th 2022, 1:52:07 pm
 ---
 
 # Set Theory
@@ -32,11 +32,11 @@ Definition: Let $S$ be an ordered set and let $A$ be a subset of $S$. We say $A$
 
 Definition: Let $S$ be an ordered set and let $A$ be a subset of $S$. We say $A$ _is bounded above in_ $S$ when there exists $\beta \in S$ so that the following statement is true:$(\forall x \in A)\ \beta \geq x$, $\beta$ is a **upper bound** for A in S.
 
-Definition: Let $S$ be an ordered set, let $A$ be a subset of $S$, let $U_A$ be the set of upper bounds of $A$ in $S$, and let $\alpha \in U_A$. We say $\alpha$ is a least upper bound of $A$ in $S$ when for all upper bounds $\beta \in U_A$ we have $\alpha \leq \beta$. In other words, $\alpha$ is a **least upper bound** of $A$ in $S$ when the following statement is true: $(\forall \beta \in U_A) \alpha \leq \beta$
+Definition: Let $S$ be an ordered set, let $A$ be a subset of $S$, let $U_A$ be the set of upper bounds of $A$ in $S$, and let $\alpha \in U_A$. We say $\alpha$ is a least upper bound of $A$ in $S$ when for all upper bounds $\beta \in U_A$ we have $\alpha \leq \beta$. In other words, $\alpha$ is a **least upper bound** of $A$ in $S$ when the following statement is true: $(\forall \beta \in U_A)\ \alpha \leq \beta$
 
 When $\alpha$ is the least upper bound of $A$ in $S$ we say $\alpha$ is the **supremum** of $A$ in $S$ and we write $sup\ A = \alpha$.
 
-Definition: Let $S$ be an ordered set, let $A$ be a subset of $S$, let $L_A$ be the set of lower bounds of $A$ in $S$, and let $\alpha \in L_A$. We say $\alpha$ is a greatest lower bound of $A$ in $S$ when for all upper bounds $\beta \in L_A$ we have $\alpha \geq \beta$. In other words, $\alpha$ is a **greatest lower bound** of $A$ in $S$ when the following statement is true: $(\forall \beta \in L_A) \alpha \geq \beta$
+Definition: Let $S$ be an ordered set, let $A$ be a subset of $S$, let $L_A$ be the set of lower bounds of $A$ in $S$, and let $\alpha \in L_A$. We say $\alpha$ is a greatest lower bound of $A$ in $S$ when for all upper bounds $\beta \in L_A$ we have $\alpha \geq \beta$. In other words, $\alpha$ is a **greatest lower bound** of $A$ in $S$ when the following statement is true: $(\forall \beta \in L_A)\ \alpha \geq \beta$
 
 When $\alpha$ is the least upper bound of $A$ in $S$ we say $\alpha$ is the **infimum** of $A$ in $S$ and we write $inf\ A = \alpha$.
 

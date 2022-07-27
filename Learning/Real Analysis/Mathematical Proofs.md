@@ -46,4 +46,4 @@ $$(\forall n \in \mathbb N)\ p(n)$$
 1. $p(0)$ is true; and
 2. for every $k \in N$, if $p(k)$ is true, then $p(k + 1)$ is true.
 
-Surjective: let $f: x \rightarrow y$, $f$ is surjective if and only if $\forall y \in Y$, $\exists x \in X$, such that $f(x) = y$
+Surjective: let $f: x \to y$, $f$ is surjective if and only if $\forall y \in Y$, $\exists x \in X$, such that $f(x) = y$

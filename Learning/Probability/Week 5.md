@@ -16,7 +16,7 @@ Definition: Let the number of changes that occur in a given _continuous interval
 Let $\lambda$ denote the number of changes in unit interval:
 
 - $$P(X = x) \approx \binom{n}{x} (\frac{\lambda}{n})^x (1 - \frac{\lambda}{n})^{n - x}$$
-- If n increases without bound, we have $$P(X = x) = \lim_{n \rightarrow \infty} \frac{n!}{x!(n - x)!} (\frac{\lambda}{n})^x (1 - \frac{\lambda}{n})^{n - x} = \frac{\lambda^x e^{-\lambda}}{x!}$$
+- If n increases without bound, we have $$P(X = x) = \lim_{n \to \infty} \frac{n!}{x!(n - x)!} (\frac{\lambda}{n})^x (1 - \frac{\lambda}{n})^{n - x} = \frac{\lambda^x e^{-\lambda}}{x!}$$
 
 ---
 

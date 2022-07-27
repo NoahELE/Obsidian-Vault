@@ -1,6 +1,6 @@
 ---
 date created: Monday, April 4th 2022, 11:17:44 am
-date modified: Friday, April 8th 2022, 4:17:44 pm
+date modified: Monday, April 11th 2022, 11:14:23 am
 ---
 
 # Week 6
@@ -45,8 +45,8 @@ A random variable $X$ with pdf $f(x) = \frac{1}{\theta} e^{-\frac{x}{\theta}}, x
 
 - $\mu = E(X) = \theta$
 - $\sigma^2 = Var(X) = \theta^2$
-- mgf: $M(t) = \frac{1}{1 - \theta t}, t < \frac{1}{\theta}$
-- cdf: $F(x) = P(X \le x) = 1 - P(X > x) = 1 - e^{-\frac{w}{\theta}}$
+- mgf: $M(t) = \frac{1}{1 - \theta t}, t < \frac 1 \theta$
+- cdf: $F(x) = P(X \le x) = 1 - P(X > x) = 1 - e^{-\frac x \theta}$
 
 > The exponential distribution has a **no-memory** property:
 > $$P(X > x + y | X > x) = \frac{P(X > x + y)}{P(X > x)} = P(X > y)$$
@@ -62,8 +62,9 @@ Consider again a Poisson process with $\lambda$ being the rate of occurrence per
 
 The important **Gamma Function** defined by $\Gamma(t) = \int^\infty_0 y^{t - 1} e^{-y} dy, t > 0$
 
-$\Gamma(n) = (n - 1)!$ when $n$ is a positive integer. For this reason gamma function can also be called the **generalised factorial**
+$\Gamma(n) = (n - 1)!$ when $n$ is a positive integer. For this reason gamma function can also be called the **generalised factorial**.
 
+> [!NOTE]
 > $\Gamma(\frac 1 2) = \sqrt \pi$
 
 ---

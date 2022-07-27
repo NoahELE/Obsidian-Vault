@@ -42,9 +42,9 @@ one value of Y
 
 $A = (X_1,\ X_2,\ …,\ X_n)$ and $B = (Y_1,\ Y_2,\ …,\ Y_n)$
 
-1. Reflexivity: $B \subseteq A \Rightarrow A \rightarrow B$
-2. Augmentation: $A \rightarrow B \Rightarrow AC \rightarrow BC$
-3. Transitivity: $A \rightarrow B\ and\ B \rightarrow C \Rightarrow A \rightarrow C$
+1. Reflexivity: $B \subseteq A \implies A \rightarrow B$
+2. Augmentation: $A \rightarrow B \implies AC \rightarrow BC$
+3. Transitivity: $A \rightarrow B\ and\ B \rightarrow C \implies A \rightarrow C$
 
 ## Steps of Normalization
 
