@@ -1,6 +1,6 @@
 ---
 date created: Monday, July 25th 2022, 2:23:48 pm
-date modified: Monday, July 25th 2022, 3:05:09 pm
+date modified: Friday, August 5th 2022, 11:29:51 am
 ---
 
 # Week 1
@@ -39,4 +39,4 @@ date modified: Monday, July 25th 2022, 3:05:09 pm
 - Elementary Business Process (EBP) Test
     - A task performed by one person in one place at one time, in response to a business event, which adds measurable business value and leaves the data in a consistent state.
 - Size Test
-    - Is a task very seldom a single action/step; typically many steps; fully dressed often require 3–10 pages of text
+    - Is a task very seldom a single action/step; typically many steps; fully dressed often require 3-10 pages of text

@@ -13,9 +13,9 @@ Definition: Let $(a_n)$ be a sequence and let $(A_n)$ be the sequence such that 
 - converges when $p > 1$;
 - diverges when $0 < p \le 1$.
 
-Geometric Series: $a, ar, ar^2, ar^3, …$ converges if and only if $|r| < 1$.
+Geometric Series: $a, ar, ar^2, ar^3, \dots$ converges if and only if $|r| < 1$.
 
-**Geometric Series Test**: The geometric series $a + ar + ar^2 + ar^3 + ar^4 + …$ converges if and only if $|r| < 1$.
+**Geometric Series Test**: The geometric series $a + ar + ar^2 + ar^3 + ar^4 + \dots$ converges if and only if $|r| < 1$.
 
 **Limit Ratio Test**: Let $(a_n)$ be a sequence, and $\frac{a_{n + 1}}{a_n} \to r$.
 
@@ -23,4 +23,4 @@ Geometric Series: $a, ar, ar^2, ar^3, …$ converges if and only if $|r| < 1$.
 2. If $|r| > 1$, then the series diverges.
 3. If $|r| = 1$, the test is not conclusive.
 
-**Alternating Series Test**: Let $(b_n)$ be a monotone decreasing sequence so that $b_n \to 0$. The alternating series $b_0 - b_1 + b_2 - b_3 + b_4 - b_5 + …$ converges.
+**Alternating Series Test**: Let $(b_n)$ be a monotone decreasing sequence so that $b_n \to 0$. The alternating series $b_0 - b_1 + b_2 - b_3 + b_4 - b_5 + \dotsb$ converges.

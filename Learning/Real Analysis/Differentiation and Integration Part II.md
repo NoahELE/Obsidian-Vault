@@ -5,7 +5,7 @@ date modified: Tuesday, May 10th 2022, 8:44:09 am
 
 # Differentiation and Integration Part II
 
-Let $f: [a, b] \to \mathbb R$ be bounded on $\mathbb R$, and let $P = \{x_0, x_1, x_2, …, x_n\}$ of $[a,b]$. The lower Riemann sum of $f$ with respect to $P$ is given by $$L(f, P) = \sum^n_{k = 1} m_k(x_k - x_{k - 1})$$
+Let $f: [a, b] \to \mathbb R$ be bounded on $\mathbb R$, and let $P = \{x_0, x_1, x_2, \dots, x_n\}$ of $[a,b]$. The lower Riemann sum of $f$ with respect to $P$ is given by $$L(f, P) = \sum^n_{k = 1} m_k(x_k - x_{k - 1})$$
 
 The upper Riemann sum of $f$ with respect to $P$ is given by $$U(f, P) = \sum^n_{k = 1} M_k(x_k - x_{k - 1})$$
 

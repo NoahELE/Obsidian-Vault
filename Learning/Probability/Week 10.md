@@ -9,7 +9,7 @@ date modified: Friday, May 13th 2022, 11:56:09 am
 
 ## Distributions of Sums of Independent Random Variables
 
-- sample mean, $\bar X = \frac{1}{n}(X_1 + X_2 + … + X_n)$
+- sample mean, $\bar X = \frac{1}{n}(X_1 + X_2 + \dots + X_n)$
 - sample variance, $S^2 = \frac{1}{n - 1} \sum^n_{i = 1}(X_i - \bar X)^2$
 - order statistics
 

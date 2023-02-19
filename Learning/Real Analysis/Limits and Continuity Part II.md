@@ -32,4 +32,4 @@ Theorem: Let $f$ be continuous on $[a, b]$ so that $f(a) < f(b)$ and let $y \in 
 
 ## Sequences of Continuous Functions
 
-Theorem: (Uniform Limit Theorem) Let $(f_n(x))$ be a sequence of functions with domain $D$, if $(f_1(x), f_2(x), …)$ converges uniformly to $f(x)$, then $f(x)$ is continuous.
+Theorem: (Uniform Limit Theorem) Let $(f_n(x))$ be a sequence of functions with domain $D$, if $(f_1(x), f_2(x), \dots)$ converges uniformly to $f(x)$, then $f(x)$ is continuous.

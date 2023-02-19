@@ -1,10 +1,14 @@
 {
   "baseFontSize": 16,
-  "cssTheme": "Things",
+  "cssTheme": "Minimal",
   "theme": "moonstone",
   "translucency": false,
   "baseFontSizeAction": false,
   "enabledCssSnippets": [
     "font"
-  ]
+  ],
+  "accentColor": "#6c8bef",
+  "monospaceFontFamily": "",
+  "interfaceFontFamily": "",
+  "textFontFamily": ""
 }

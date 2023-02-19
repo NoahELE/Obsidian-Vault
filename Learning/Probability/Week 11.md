@@ -20,8 +20,8 @@ Theorem: If $Z^d = N(0, 1)$ and $V = Z^2$, then $V^d = \chi^2(1)$.
 
 ## Random Functions Associated with Normal Distributions
 
-Theorem (Distribution of normal sample mean): If $X_1, X_2, …, X_n$ is an i.i.d. random sample of size $n$ from the normal distribution $N(\mu, \sigma^2)$. Then the distribution of sample mean $\bar X = \frac 1 n \sum^n_{i = 1} X_i$ is $N(\mu, \frac{\sigma^2}{n})$.
+Theorem (Distribution of normal sample mean): If $X_1, X_2, \dots, X_n$ is an i.i.d. random sample of size $n$ from the normal distribution $N(\mu, \sigma^2)$. Then the distribution of sample mean $\bar X = \frac 1 n \sum^n_{i = 1} X_i$ is $N(\mu, \frac{\sigma^2}{n})$.
 
 ## Central Limit Theorem
 
-If $\bar X_n$ is the mean of a random sample $X_1, X_2, …, X_n$ of size $n$ from a distribution with a finite mean $\mu$ and a finite positive variance $\sigma^2$, then the distribution of $$W = \frac{\bar X_n - \mu}{\sigma / \sqrt n} = \frac{\sum^n_{i = 1}X_i - n\mu}{\sqrt n \sigma}$$ is $N(0, 1)$ in the limit as $n \to \infty$.
+If $\bar X_n$ is the mean of a random sample $X_1, X_2, \dots, X_n$ of size $n$ from a distribution with a finite mean $\mu$ and a finite positive variance $\sigma^2$, then the distribution of $$W = \frac{\bar X_n - \mu}{\sigma / \sqrt n} = \frac{\sum^n_{i = 1}X_i - n\mu}{\sqrt n \sigma}$$ is $N(0, 1)$ in the limit as $n \to \infty$.

@@ -8,6 +8,7 @@ date modified: Friday, April 8th 2022, 4:58:06 pm
 
 ## Tasks
 
+- [ ] Internship
 
 
 

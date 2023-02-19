@@ -14,7 +14,7 @@ Definition: _A **mathematical proof**, is a sequence of statements where each st
     - algebra, or
     - previous true statements
 
-Definition: a **formal mathematical proof** is a finite sequence of statements $A_1, A_2, …, A_n$, such that each $A_i$ is either
+Definition: a **formal mathematical proof** is a finite sequence of statements $A_1, A_2, \dots, A_n$, such that each $A_i$ is either
 
 - known or assumed true or
 - can be inferred from a known or assumed true statement $A_j$, with $j < i$ (i.e. a previous statement).

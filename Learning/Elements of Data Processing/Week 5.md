@@ -39,7 +39,7 @@ Data structure: a bit array (an array of binary bits, only 0s and 1s)
 A bloom filter with $I$ bits:
 
 - Initialise all bits to 0
-- Turn bits using $k$ number of hash functions $H_1, H_2, …, H_k$
+- Turn bits using $k$ number of hash functions $H_1, H_2, \dots, H_k$
 - Each hash function maps input to an index in the bit array
 
 #### Compare 2 Strings

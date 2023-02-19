@@ -1,0 +1,202 @@
+{
+  "main": {
+    "id": "f61d90e44909d2e0",
+    "type": "split",
+    "children": [
+      {
+        "id": "202b258133a38622",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ae70a8f656864214",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2023-02-17 16.11.25.excalidraw.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f3cd87795248cfc8",
+    "type": "split",
+    "children": [
+      {
+        "id": "f932ba3efad80dca",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30aaf898ace7c8ee",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTime"
+              }
+            }
+          },
+          {
+            "id": "ed689f4e1cf6c8ab",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "coupling",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d6d097e1c5250812",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          },
+          {
+            "id": "02b0470cb29b49ec",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "7704a6eb12ebf02d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6aa9438e84f367f1",
+    "type": "split",
+    "children": [
+      {
+        "id": "e1b5b0d834a86936",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "91434472596a116a",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "70a676d3428b0bbc",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "fabd95ec43d50425",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Excalidraw/Drawing 2023-02-17 16.11.25.excalidraw.md"
+              }
+            }
+          },
+          {
+            "id": "d959c60d0ee566d6",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      },
+      {
+        "id": "6afca07651a3e949",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "96e301ea32f00652",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Excalidraw/Drawing 2023-02-17 16.11.25.excalidraw.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b3f3df539203b3cc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Excalidraw/Drawing 2023-02-17 16.11.25.excalidraw.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "ae70a8f656864214",
+  "lastOpenFiles": [
+    "Excalidraw/Drawing 2022-11-11 14.38.40.excalidraw.md",
+    "Excalidraw/Drawing 2023-02-17 16.11.19.excalidraw.md",
+    "Excalidraw/Drawing 2023-02-17 16.11.25.excalidraw.md",
+    "Melbourne Employability Accelerator.md",
+    "Database Systems/ER Modeling.md",
+    "Database Systems/Database Development Process.md",
+    "Database Systems/Database Warehousing.md",
+    "Database Systems/Distributed Databases.md",
+    "Database Systems/Normalization.md",
+    "Algorithms and Data Structures/Hash Tables.md"
+  ]
+}

@@ -1,6 +1,6 @@
 ---
 date created: Tuesday, January 4th 2022, 10:53:47 am
-date modified: Friday, April 8th 2022, 1:51:14 pm
+date modified: Friday, January 20th 2023, 9:20:44 pm
 ---
 
 # Normalization
@@ -40,7 +40,7 @@ one value of Y
 
 ## Armstrong’s Axioms
 
-$A = (X_1,\ X_2,\ …,\ X_n)$ and $B = (Y_1,\ Y_2,\ …,\ Y_n)$
+$A = (X_1, X_2, \dots, X_n)$ and $B = (Y_1, Y_2, \dots, Y_n)$
 
 1. Reflexivity: $B \subseteq A \implies A \rightarrow B$
 2. Augmentation: $A \rightarrow B \implies AC \rightarrow BC$

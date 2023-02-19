@@ -1,6 +1,6 @@
 ---
 date created: Monday, March 21st 2022, 10:14:37 am
-date modified: Friday, April 8th 2022, 1:45:39 pm
+date modified: Monday, August 15th 2022, 9:52:43 am
 ---
 
 # Week 4
@@ -50,7 +50,7 @@ $$M(t) = \sum_{x \in S} e^{tx} \binom{n}{x} p^x (1 - p)^{n - x} = (pe^t + 1 - p)
 
 Let the r.v. $X$ be the number of trials needed to obtain $r$ successes,
 
-- The pmf of $X$ is $$f(x) = \binom{x - 1}{r - 1}p^r(1 - p)^{x - r} = \binom{x - 1}{r - 1}p^rq^{x - r}, x = r, r + 1, r + 2, …$$
+- The pmf of $X$ is $$f(x) = \binom{x - 1}{r - 1}p^r(1 - p)^{x - r} = \binom{x - 1}{r - 1}p^rq^{x - r}, x = r, r + 1, r + 2, \dots$$
 - We say that X has a **negative binomial distribution**, i.e. $X^d = NB(r, p)$
 - The pmf is similar to each term in the Maclaurin’s series expansion of the binomial function $1 - w$ to the negative exponent $–r$, that is $h(w) = (1 - w)^{-r} = \sum^\infty_{k = 0}\frac{h^{(k)}(0)}{k!}w^k = \sum^\infty_{x = r}\binom{x - 1}{r - 1}w^{x - r}$
 - Thus, $\sum^\infty_{x = r}f(x) = p^r\sum^\infty_{x = r}\binom{x - 1}{r - 1}q^{x - r} = p^r(1 - q)^{-r} = 1$
@@ -66,7 +66,7 @@ Let the r.v. $X$ be the number of trials needed to obtain $r$ successes,
 Consider a special case of negative binomial distribution where we are interested in the trial number $X$ at which the first success is observed.
 
 - We know $X^d = NB(1, p)$, and say $X$ has a **geometric distribution**, $X^d = Geo(p)$
-- The pmf is $$f(x) = p(1 - p)^{x - 1} = pq^{x - 1}, x = 1, 2, 3, …$$
+- The pmf is $$f(x) = p(1 - p)^{x - 1} = pq^{x - 1}, x = 1, 2, 3, \dots$$
 - Note that for a geometric series, $\sum^\infty_{k = 1}as^{k - 1} = \frac{a}{1 - s}$, when $|s| < 1$
 - The mgf is $$M(t) = E(e^{tX}) = \frac{pe^t}{1 - (1 - p)e^t} = \frac{pe^t}{1 - qe^t}$$
 - $\mu = E(X) = \frac{1}{p}$ and,
@@ -77,4 +77,4 @@ Consider a special case of negative binomial distribution where we are intereste
     - $P(X \le k) = 1 - P(X > k) = 1 - (1 - p)^k = 1 - q^k$
 - **Loss of Memory**, for any integers $m, k \ge 0$, $P(X > m + k | X > m) = \frac{P(X > m + k)}{P(X > m)} = \frac{q^{m + k}}{q^m} = q^k = P(X > k)$
 
-> If the Maclaurin’s series expansion for a mgf $M(t)$ exists, then $$\begin{align} M(t) &= M(0) + M'(0)\frac{t}{1!} + M''(0)\frac{t^2}{2!} + M'''(0)\frac{t^3}{3!} + …\\ &= 1 + E(X)\frac{t}{1!} + E(X^2)\frac{t^2}{2!} + E(X^3)\frac{t^3}{3!} + … \end{align}$$
+> If the Maclaurin’s series expansion for a mgf $M(t)$ exists, then $$\begin{align} M(t) &= M(0) + M'(0)\frac{t}{1!} + M''(0)\frac{t^2}{2!} + M'''(0)\frac{t^3}{3!} + \dotsb \\ &= 1 + E(X)\frac{t}{1!} + E(X^2)\frac{t^2}{2!} + E(X^3)\frac{t^3}{3!} + \dotsb \end{align}$$

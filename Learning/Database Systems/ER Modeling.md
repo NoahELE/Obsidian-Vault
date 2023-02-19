@@ -1,6 +1,6 @@
 ---
 date created: Tuesday, January 4th 2022, 10:53:47 am
-date modified: Friday, April 8th 2022, 2:40:32 pm
+date modified: Monday, January 30th 2023, 9:13:27 pm
 ---
 
 # ER Modeling

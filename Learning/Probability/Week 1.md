@@ -30,9 +30,9 @@ _Operations of events are the same as those of sets._
 Definition:
 
 1. Events $A$ and $B$ are **mutually exclusive** if $A \cap B = \varnothing$
-2. Events $A_1, A_2, A_3, …, A_k$ are **mutually exclusive** if they are pair-wise mutually exclusive, i.e. $A_i \cap A_j = \varnothing$ for any $i \ne j$
-3. Events $A_1, A_2, A_3, …, A_k$ are **collectively exhaustive** if $A_1 \cup A_2 \cup … \cup A_k = S$
-4. Events $A_1, A_2, A_3, …, A_k$ are **mutually exclusive and exhaustive** if $A_1 \cup A_2 \cup … \cup A_k = S$ and $A_i \cap A_j = \varnothing$ for any $i \ne j$
+2. Events $A_1, A_2, A_3, \dots, A_k$ are **mutually exclusive** if they are pair-wise mutually exclusive, i.e. $A_i \cap A_j = \varnothing$ for any $i \ne j$
+3. Events $A_1, A_2, A_3, \dots, A_k$ are **collectively exhaustive** if $A_1 \cup A_2 \cup \dots \cup A_k = S$
+4. Events $A_1, A_2, A_3, \dots, A_k$ are **mutually exclusive and exhaustive** if $A_1 \cup A_2 \cup \dots \cup A_k = S$ and $A_i \cap A_j = \varnothing$ for any $i \ne j$
 
 _Priority of the operations_:
 
@@ -72,7 +72,7 @@ In the case of a _discrete sample space_, probability can be equivalently define
 
 - A special type of experiment:
     - number of possible outcomes are finite, i.e. S is finite
-    - all possible outcomes are equally likely, i.e. $P(\{\omega _1\}) = P(\{\omega_2\}) = … = P(\{\omega_n\}) = \frac{1}{n}$
+    - all possible outcomes are equally likely, i.e. $P(\{\omega _1\}) = P(\{\omega_2\}) = \dots = P(\{\omega_n\}) = \frac{1}{n}$
 - Probability of any event A is $P(A) = \frac{n(A)}{n}$
 
 All counting techniques derived from 2 basic counting rules
@@ -82,5 +82,5 @@ All counting techniques derived from 2 basic counting rules
 
 **Some useful counting formulas**:
 
-- Permutations: The number of permutations of n distinct objects taken r at a time is $$P^n_r = _nP_r = P_{n, r} = \frac{n!}{(n - r)!} = n(n - 1)(n - 2)…(n - r + 1)$$
+- Permutations: The number of permutations of n distinct objects taken r at a time is $$P^n_r = _nP_r = P_{n, r} = \frac{n!}{(n - r)!} = n(n - 1)(n - 2)\dotsm(n - r + 1)$$
 - Combinations: The number of combinations of n distinct objects chosen r at a time is $$C^n_r = _nC_r = C_{n, r} = {n \choose r} = \frac{n!}{r!(n - r)!}$$

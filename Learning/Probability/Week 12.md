@@ -45,7 +45,7 @@ E.g. $X_t$ could be
 - the ASX All Ords index value at time $t$
 - the amount of rainfall in month $t$
 
-**Markov Chain**: In a stochastic process $\{X_n\}^\infty_{n = 0}$, if for all $n \ge 0$ and $j_0, j_1, j_2, …, j_n, j_{n + 1} \in S$, $$P(X_{n + 1} = j_{n + 1} | X_0 = j_0, X_1 = j_1, …, X_n = j_n) = P(X_{n + 1} = j_{n + 1} | X_n = j_n)$$
+**Markov Chain**: In a stochastic process $\{X_n\}^\infty_{n = 0}$, if for all $n \ge 0$ and $j_0, j_1, j_2, \dots, j_n, j_{n + 1} \in S$, $$P(X_{n + 1} = j_{n + 1} | X_0 = j_0, X_1 = j_1, \dots, X_n = j_n) = P(X_{n + 1} = j_{n + 1} | X_n = j_n)$$
 
 For a homogeneous Markov chain, we define:
 
