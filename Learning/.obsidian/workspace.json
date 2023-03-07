@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "202b258133a38622",
+        "id": "c66130cad948d54f",
         "type": "tabs",
         "children": [
           {
-            "id": "ae70a8f656864214",
+            "id": "f26fc2261b84c5c7",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2023-02-17 16.11.25.excalidraw.md"
+                "file": "Artificial Intelligence/Week 1.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -118,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2023-02-17 16.11.25.excalidraw.md"
+                "file": "Artificial Intelligence/Week 1.md"
               }
             }
           },
@@ -143,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2023-02-17 16.11.25.excalidraw.md",
+                "file": "Artificial Intelligence/Week 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2023-02-17 16.11.25.excalidraw.md",
+                "file": "Artificial Intelligence/Week 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,8 +188,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ae70a8f656864214",
+  "active": "f26fc2261b84c5c7",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2023-03-03 21.38.40.excalidraw.md",
+    "Artificial Intelligence/Week 1.md",
+    "Computer Systems/Week 1.md",
+    "Computer Systems",
+    "Artificial Intelligence",
     "Excalidraw/Drawing 2022-11-11 14.38.40.excalidraw.md",
     "Excalidraw/Drawing 2023-02-17 16.11.19.excalidraw.md",
     "Excalidraw/Drawing 2023-02-17 16.11.25.excalidraw.md",

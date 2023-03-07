@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Week 1",
+      "path": "Artificial Intelligence/Week 1.md"
+    },
+    {
+      "basename": "Week 1",
+      "path": "Computer Systems/Week 1.md"
+    },
+    {
       "basename": "Drawing 2023-02-17 16.11.25.excalidraw",
       "path": "Excalidraw/Drawing 2023-02-17 16.11.25.excalidraw.md"
     },
@@ -187,14 +195,6 @@
     {
       "basename": "Week 8",
       "path": "Group Theory and Linear Algebra/Week 8.md"
-    },
-    {
-      "basename": "Week 9",
-      "path": "Group Theory and Linear Algebra/Week 9.md"
-    },
-    {
-      "basename": "Week 10",
-      "path": "Models of Computation/Week 10.md"
     }
   ],
   "omittedPaths": [],
